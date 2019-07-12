@@ -5,4 +5,4 @@
 ### Stay tuned!! We are in Development!!
 
 
-###### Project Contributor: Caruso Sebastiano, Monaco Clara, Monaco Salvatore.
+###### Project Contributors: Caruso Sebastiano, Monaco Clara, Monaco Salvatore.
