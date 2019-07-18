@@ -14,11 +14,13 @@ laureati = [tuple(row) for row in csv.reader(open('DatasetTriennali.csv', 'r'))]
 
 Maturità = []
 Maturitàtemp = []
+MaturitàDict= {}
 nome_Maturità = " "
 tipo_maturità = 0
 for i in range(1, len(laureati)):
    nome_Maturità = laureati[i][13]
    tipo_maturità = int(abs(hash(nome_Maturità)) % (10 ** 8))
+   MaturitàDict[tipo_maturità] = nome_Maturità
    voto_diploma = int(laureati[i][11])
    CFU_primo = int(laureati[i][2])
    if CFU_primo != -1:
@@ -28,3 +30,6 @@ for i in range(1, len(laureati)):
 
 with open('ListStudent.txt', 'w') as file:
     file.write(json.dumps(Maturità))
+
+with open('DictSchool.txt', 'w') as file:
+    file.write(json.dumps(MaturitàDict))
