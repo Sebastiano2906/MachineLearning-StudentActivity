@@ -141,8 +141,9 @@ for i in range(len(laureati)):
                     year_lic = int(laureati[i][10])
                 else:
                     year_lic = -1
-            lmtemp = [matr, CF, primo, secondo, terzo, tot, CDS, Tipo_Cds, coorte, years_carreer, year_lic, vot_lic, cod_school, school,year_of_degree, vot_degree, erasmus, tesi_erasmus, state_stud,mot_stat_stud,fc]
-            lmDegree.append(lmtemp)
+            if fc <= 5:
+                lmtemp = [matr, CF, primo, secondo, terzo, tot, CDS, Tipo_Cds, coorte, years_carreer, year_lic, vot_lic, cod_school, school,year_of_degree, vot_degree, erasmus, tesi_erasmus, state_stud,mot_stat_stud,fc]
+                lmDegree.append(lmtemp)
 print(len(l2Degree))
 print(len(lmDegree))
 
