@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36a36402-c4a2-4936-a7c6-b9b91af22e52" name="Default Changelist" comment="" />
+    <list default="true" id="36a36402-c4a2-4936-a7c6-b9b91af22e52" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/DSML/PolynomialRegressionTriennali.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,13 +26,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DSML/LinearRegressionTriennali.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+            <state relative-caret-position="162">
+              <caret line="93" column="103" lean-forward="true" selection-start-line="58" selection-end-line="93" selection-end-column="103" />
               <folding>
+                <element signature="e#0#18#0" expanded="true" />
                 <element signature="e#182#445#1" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DSML/PolynomialRegressionTriennali.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="43" column="63" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,7 +65,11 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DSML/DictCodSchool.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="26" selection-start-column="26" selection-end-column="26" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -90,13 +110,15 @@
         <option value="$PROJECT_DIR$/DSML/WritierList.py" />
         <option value="$PROJECT_DIR$/DSML/MLProject.py" />
         <option value="$PROJECT_DIR$/DSML/LinearRegressionTriennali.py" />
+        <option value="$PROJECT_DIR$/PolynomialRegressionTriennali.py" />
+        <option value="$PROJECT_DIR$/DSML/PolynomialRegressionTriennali.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-15" />
-    <option name="width" value="1950" />
-    <option name="height" value="2055" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -123,6 +145,9 @@
     </panes>
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sebas\PycharmProjects\MachineLearning-Local\DSML" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sebas\PycharmProjects\MachineLearning-Local\DSML" />
     </key>
@@ -139,7 +164,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.LinearRegressionTriennali">
+  <component name="RunManager" selected="Python.PolynomialRegressionTriennali">
     <configuration name="LinearRegressionTriennali" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MachineLearning-Local" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -182,6 +207,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="PolynomialRegressionTriennali" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MachineLearning-Local" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\sebas\PycharmProjects\MachineLearning-Local\DSML\PolynomialRegressionTriennali.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="WritierDict" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MachineLearning-Local" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -205,6 +251,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.PolynomialRegressionTriennali" />
         <item itemvalue="Python.LinearRegressionTriennali" />
         <item itemvalue="Python.WritierDict" />
         <item itemvalue="Python.MLProject" />
@@ -250,19 +297,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19865772" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16778524" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32152975" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31728044" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32978722" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49932885" weight="0.3280142" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3280142" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49932885" weight="0.32719547" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.33094555" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067115" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -290,19 +338,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/WritierList.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="30" column="72" selection-start-line="30" selection-start-column="72" selection-end-line="30" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/DictCodSchool.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/DSML/DictSchool.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -317,12 +352,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DSML/DictCodSchool.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DSML/WritierList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="30" column="72" selection-start-line="30" selection-start-column="72" selection-end-line="30" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DSML/LinearRegressionTriennali.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+        <state relative-caret-position="162">
+          <caret line="93" column="103" lean-forward="true" selection-start-line="58" selection-end-line="93" selection-end-column="103" />
           <folding>
+            <element signature="e#0#18#0" expanded="true" />
             <element signature="e#182#445#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DSML/PolynomialRegressionTriennali.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="43" column="63" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
