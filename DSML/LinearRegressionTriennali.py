@@ -14,8 +14,8 @@ for i in range(0, len(Maturità)):
     Result.append(int(Maturità[i][0][2]))
     Predictive_Value.append(predictiveTemp)
 """
-Train_size = int((len(Maturità) / 100) * 80)
-Test_size = int((len(Maturità)/100) * 20)
+Train_size = int((len(Maturità) / 100) * 75)
+Test_size = int((len(Maturità)/100) * 25)
 Train_set = []
 Test_set = []
 Result_Test = []
