@@ -1,22 +1,6 @@
 import pandas as pd
 import os
-import matplotlib.pyplot as plt
-import numpy as np
-from sklearn.svm import SVC as svc
-from sklearn.model_selection import train_test_split
 import csv
-
-
-DEGREE_PATH="C:/Users/sebas/PycharmProjects/DSML/DatasetStudenti.csv"
-def load_degree_data(degree_path=DEGREE_PATH):
-    csv_path = os.path.join(degree_path, "C:/Users/sebas/PycharmProjects/DSML/DatasetStudenti.csv")
-    return pd.read_csv(csv_path)
-
-
-degree_db = load_degree_data()
-"""degree_db.info()
-print(degree_db.head(5))"""
-
 
 laureati = [tuple(row) for row in csv.reader(open('DatasetStudenti.csv', 'r'))]
 l2Degree = []
@@ -27,7 +11,7 @@ for i in range(len(laureati)):
     if len(laureati[i]) == 21:
         if laureati[i][7] == 'L2':
             coorte = int(laureati[i][8])
-            if coorte > 2007:
+            if coorte > 2012:
                 years_carreer = int(laureati[i][9])
                 year_lic = int(laureati[i][10])
                 matr = int(laureati[i][0])
@@ -53,17 +37,17 @@ for i in range(len(laureati)):
                 if laureati[i][11] != '?':
                     vot_lic = int(laureati[i][11])
                 else:
-                    vot_lic = -1
+                    vot_lic = 0
                 cod_school = laureati[i][12]
                 school = laureati[i][13]
                 if laureati[i][14] != '?':
                     year_of_degree = int(laureati[i][14])
                 else:
-                    year_of_degree = -1
+                    year_of_degree = 0
                 if laureati[i][15] != '?':
                     vot_degree = int(laureati[i][15])
                 else:
-                    vot_degree = -1
+                    vot_degree = 0
                 if laureati[i][16] == '0':
                     erasmus = 0
                 else:
@@ -78,9 +62,12 @@ for i in range(len(laureati)):
                     if laureati[i][20] != '':
                         fc = int(laureati[i][20])
                 else:
-                    fc = -1
-                l2temp = [matr, CF, primo, secondo, terzo, tot, CDS, Tipo_Cds, coorte, years_carreer, year_lic, vot_lic, cod_school, school,year_of_degree, vot_degree, erasmus, tesi_erasmus, state_stud,mot_stat_stud,fc]
-                l2Degree.append(l2temp)
+                    fc = 0
+                if fc < 5:
+                    if vot_lic != 0:
+                        if primo != -1:
+                            l2temp = [matr, CF, primo, secondo, terzo, tot, CDS, Tipo_Cds, coorte, years_carreer, year_lic, vot_lic, cod_school, school,year_of_degree, vot_degree, erasmus, tesi_erasmus, state_stud,mot_stat_stud,fc]
+                            l2Degree.append(l2temp)
 
 for i in range(len(laureati)):
     if len(laureati[i]) == 21:
@@ -93,15 +80,15 @@ for i in range(len(laureati)):
                 if laureati[i][2] != '?':
                     primo = int(laureati[i][2])
                 else:
-                    primo = -1
+                    primo = 0
                 if laureati[i][3] != '?':
                     secondo = int(laureati[i][3])
                 else:
-                    secondo = -1
+                    secondo = 0
                 if laureati[i][4] != '?':
                     terzo = int(laureati[i][4])
                 else:
-                    terzo = -1
+                    terzo = 0
                 if laureati[i][5] != '?':
                     tot = int(laureati[i][5])
                 else:
@@ -111,17 +98,17 @@ for i in range(len(laureati)):
                 if laureati[i][11] != '?':
                     vot_lic = int(laureati[i][11])
                 else:
-                    vot_lic = -1
+                    vot_lic = 0
                 cod_school = laureati[i][12]
                 school = laureati[i][13]
                 if laureati[i][14] != '?':
                     year_of_degree = int(laureati[i][14])
                 else:
-                    year_of_degree = -1
+                    year_of_degree = 0
                 if laureati[i][15] != '?':
                     vot_degree = int(laureati[i][15])
                 else:
-                    vot_degree = -1
+                    vot_degree = 0
                 if laureati[i][16] == '0':
                     erasmus = 0
                 else:
@@ -136,11 +123,11 @@ for i in range(len(laureati)):
                     if laureati[i][20] != '':
                         fc = int(laureati[i][20])
                 else:
-                    fc = -1
+                    fc = 0
                 if laureati[i][10] != '?':
                     year_lic = int(laureati[i][10])
                 else:
-                    year_lic = -1
+                    year_lic = 0
             if fc <= 5:
                 lmtemp = [matr, CF, primo, secondo, terzo, tot, CDS, Tipo_Cds, coorte, years_carreer, year_lic, vot_lic, cod_school, school,year_of_degree, vot_degree, erasmus, tesi_erasmus, state_stud,mot_stat_stud,fc]
                 lmDegree.append(lmtemp)

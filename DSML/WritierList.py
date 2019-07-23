@@ -28,8 +28,9 @@ for i in range(1, len(laureati)):
    voto_diploma = int(laureati[i][11])
    CFU_primo = int(laureati[i][2])
    if CFU_primo != -1:
-    Maturitàtemp = [[tipo_maturità, voto_diploma, CFU_primo, nome_Scuola]]
-    Maturità.append(Maturitàtemp)
+       if CFU_primo <= 60:
+        Maturitàtemp = [[tipo_maturità, voto_diploma, CFU_primo, nome_Scuola]]
+        Maturità.append(Maturitàtemp)
 
 
 with open('ListStudent.txt', 'w') as file:
