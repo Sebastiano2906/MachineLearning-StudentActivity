@@ -1,9 +1,18 @@
+"""
+Stesso discorso di LinearRegression.py. Qui viene implementato PolynomialRegression per cercare di alzare il punteggio
+R2Score. Dal libro potrete leggere una spiegazione migliore di quella che io potrei mai farvi, casomai servisse.
+Il grado del polinomi è fissato a 2, e non ha senso aumentarlo. Provare per credere.
+
+Il punteggio R2Score si innalza, ma resta comunque al di sotto di 0.20 e quindi altamente inaccetabile. Motivi? Vedi
+LinearRegression.py
+"""
+
 from sklearn.preprocessing import PolynomialFeatures
 import json
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
-Maturità = json.load(open("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/ListStudent.txt"))
+Maturità = json.load(open("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/FileGenerated/ListStudentAug.txt"))
 Train_size = int((len(Maturità) / 100) * 80)
 Test_size = int((len(Maturità)/100) * 20)
 Train_set = []
@@ -35,7 +44,8 @@ print("Slope:", model.coef_)
 maximum = 0.0
 sw = 0
 minus = 0.0
-School = json.load(open("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/DictSchool.txt"))
+y_pred_pred = []
+School = json.load(open("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/FileGenerated/DictSchool.txt"))
 for item in Test_set:
     tipo_maturità = item[0]
     voto_diploma = int(item[1])
@@ -44,6 +54,7 @@ for item in Test_set:
     predictiveTemp = poly_features.fit_transform(predictiveTemp)
     y_pred = model.predict(predictiveTemp)
     y_pred = float(y_pred)
+    y_pred_pred.append(y_pred)
     if sw == 0:
         minus = y_pred
         min_school = tipo_maturità
@@ -58,5 +69,9 @@ max_school = str(max_school)
 min_school = str(min_school)
 name_max_school = School.get(max_school, None)
 name_min_school = School.get(min_school, None)
-print("Highest score: ", maximum, "of type " + name_max_school, sep="\n")
-print("Worst score: ", minus, "of school " + name_min_school, sep="\n")
+print("Highest score: ", maximum, sep="\n")
+print("Worst score: ", minus, sep="\n")
+from sklearn.metrics import r2_score
+
+
+print("R2Score : ", r2_score(Result_Test, y_pred_pred))
