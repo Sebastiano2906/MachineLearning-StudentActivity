@@ -1,0 +1,1 @@
+{"Liceo-Europeo": 1, "Classica": 2, "Artistico": 3, "Linguistico": 4, "Geometra": 5, "Socio-Psico-Pedagogico": 6, "Ragioneria": 7, "Nautico": 8, "Scientifica": 9, "Agrario": 10, "ALTRE": 11, "Tecnico": 12, "Alberghiere": 13}

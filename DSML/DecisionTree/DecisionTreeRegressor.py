@@ -9,90 +9,83 @@ Cod_School.txt, Mot_sta_stud.txt, sta_stud.txt, Tipo_mat.txt
 
 Successivamente viene lanciato un decision tree, non prima di aver fatto cross-validation. Il punteggio ottenuto in termini di R2Score, è ottimo, 0.86.
 
+
+
+EDIT: MI SONO ACCORTO CHE IL MODELLO SI ADATTAVA TROPPO ALLA DISTRIBUZIONE DEGLI STUDENTI. INFATTI LE PREDIZIONI ERANO MOLTO PIù
+PRECISE QUANDO LO STUDENTE ERA UNO STUDENTE IN CORSO, E NON LAUREATO, PER FARE IN MODO DA SUDDIVIDERE GLI STUDENTI LAUREATI DA QUELI NON LAUREATI
+HO CREATO IL FILE WriteListDecisionTree.py DOVE EFFETTUO LA SEPARAZIONE DEI DUE TIPI DI STUDENTI. LEGGO I DATI DAI RISPETTIVI FILE E GENERO TRAINSET E TESTSET
+IN MODO DA MANTENERE UNA PERCENTUALE DI 80/20 DI COMPOSIZIONE. IL TRAIN SET QUINDI SARA COSTITUITO DALL 80% DEL DATASET TOTALE.
+
+PER VISUALIZZARE L'ALBERO OUTPUT DI QUESTO ALGORITMO COPIARE IL CONTENUTO DEL FILE DecisionTree.txt e incollare tutto nella TextBox del sito http://webgraphviz.com/ .
+
+Enjoy the happines.
 """
 
-import numpy as np
 import pandas as pd
 from sklearn.model_selection import cross_val_score
 from sklearn.tree import DecisionTreeRegressor
-import json
+from sklearn.metrics import mean_squared_error
+from sklearn.tree import export_graphviz
 
 
-student = pd.read_json("ListDataset.txt", orient='records',dtype=True)
-matr = np.array(student[0][1:])
-cf = np.array(student[1][1:])
-targetValue = np.array(student[2][1:])
-secondo = np.array(student[3][1:])
-terzo= np.array(student[4][1:])
-tot = np.array(student[5][1:])
-CDS = np.array(student[6][1:])
-Tipo_Cds = np.array(student[7][1:])
-coorte = np.array(student[8][1:])
-anni_carriera = np.array(student[9][1:])
-anno_diploma = np.array(student[10][1:])
-voto_diploma = np.array(student[11][1:])
-Cod_School = np.array(student[12][1:])
-tipo_mat = np.array(student[13][1:])
-anno_laurea = np.array(student[14][1:])
-voto_laurea = np.array(student[15][1:])
-erasmus = np.array(student[16][1:])
-tesi_estero = np.array(student[17][1:])
-mot_sta_stud = np.array(student[18][1:])
-sta_stud = np.array(student[19][1:])
-fc = np.array(student[20][1:])
-classe = np.array(student[21][1:])
-predictiveAttribute = []
-Tipo_Cds_dict = dict([(y,x+1) for x,y in enumerate(sorted((set(Tipo_Cds))))])
-Cod_School_dict = dict([(y,x+1) for x,y in enumerate(sorted((set(Cod_School))))])
-Tipo_mat_dict= dict([(y,x+1) for x,y in enumerate(sorted((set(tipo_mat))))])
-mot_sta_stud_dict= dict([(y,x+1) for x,y in enumerate(sorted((set(mot_sta_stud))))])
-sta_stud_dict= dict([(y,x+1) for x,y in enumerate(sorted((set(sta_stud))))])
-for k in Tipo_Cds_dict.keys():
-    for i in range(len(Tipo_Cds)):
-        if Tipo_Cds[i] == k:
-            Tipo_Cds[i] = Tipo_Cds_dict.get(k)
+predictiveAttributeDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/DecisionTree/predictiveDegree.txt", orient='records', dtype=True,typ="series")
+predictiveAttributeNotDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/DecisionTree/predictiveNotDegree.txt", orient='records', dtype=True,typ="series")
 
-for k in Cod_School_dict.keys():
-    for i in range(len(Cod_School)):
-        if Cod_School[i] == k:
-            Cod_School[i] = Cod_School_dict.get(k)
 
-for k in Tipo_mat_dict.keys():
-    for i in range(len(tipo_mat)):
-        if tipo_mat[i] == k:
-            tipo_mat[i] = Tipo_mat_dict.get(k)
+train_set = []
+test_set = []
+train_result = []
+test_result = []
+count = 0
+train_percent = (len(predictiveAttributeDegree)/100)*80
+for i in range(len(predictiveAttributeDegree)):
+    if count < train_percent:
+        count = count + 1
+        train_set.append([predictiveAttributeDegree[i][0], predictiveAttributeDegree[i][1], predictiveAttributeDegree[i][3], predictiveAttributeDegree[i][4],
+                          predictiveAttributeDegree[i][5], predictiveAttributeDegree[i][6], predictiveAttributeDegree[i][7], predictiveAttributeDegree[i][8],
+                          predictiveAttributeDegree[i][9], predictiveAttributeDegree[i][10], predictiveAttributeDegree[i][11], predictiveAttributeDegree[i][12],
+                          predictiveAttributeDegree[i][13], predictiveAttributeDegree[i][14], predictiveAttributeDegree[i][15], predictiveAttributeDegree[i][16],
+                          predictiveAttributeDegree[i][17], predictiveAttributeDegree[i][18], predictiveAttributeDegree[i][19], predictiveAttributeDegree[i][20]])
+        train_result.append([predictiveAttributeDegree[i][2]])
+    else:
+        test_set.append([predictiveAttributeDegree[i][0], predictiveAttributeDegree[i][1], predictiveAttributeDegree[i][3], predictiveAttributeDegree[i][4],
+                          predictiveAttributeDegree[i][5], predictiveAttributeDegree[i][6], predictiveAttributeDegree[i][7], predictiveAttributeDegree[i][8],
+                          predictiveAttributeDegree[i][9], predictiveAttributeDegree[i][10], predictiveAttributeDegree[i][11], predictiveAttributeDegree[i][12],
+                          predictiveAttributeDegree[i][13], predictiveAttributeDegree[i][14], predictiveAttributeDegree[i][15], predictiveAttributeDegree[i][16],
+                          predictiveAttributeDegree[i][17], predictiveAttributeDegree[i][18], predictiveAttributeDegree[i][19], predictiveAttributeDegree[i][20]])
+        test_result.append([predictiveAttributeDegree[i][2]])
+train_percent = (len(predictiveAttributeNotDegree)/100)*80
+count = 0
+for i in range(len(predictiveAttributeNotDegree)):
+    if count < train_percent:
+        count = count + 1
+        train_set.append([predictiveAttributeNotDegree[i][0], predictiveAttributeNotDegree[i][1], predictiveAttributeNotDegree[i][3], predictiveAttributeNotDegree[i][4],
+                          predictiveAttributeNotDegree[i][5], predictiveAttributeNotDegree[i][6], predictiveAttributeNotDegree[i][7], predictiveAttributeNotDegree[i][8],
+                          predictiveAttributeNotDegree[i][9], predictiveAttributeNotDegree[i][10], predictiveAttributeNotDegree[i][11], predictiveAttributeNotDegree[i][12],
+                          predictiveAttributeNotDegree[i][13], predictiveAttributeNotDegree[i][14], predictiveAttributeNotDegree[i][15], predictiveAttributeNotDegree[i][16],
+                          predictiveAttributeNotDegree[i][17], predictiveAttributeNotDegree[i][18], predictiveAttributeNotDegree[i][19], predictiveAttributeNotDegree[i][20]])
+        train_result.append([predictiveAttributeNotDegree[i][2]])
+    else:
+        test_set.append([predictiveAttributeNotDegree[i][0], predictiveAttributeNotDegree[i][1], predictiveAttributeNotDegree[i][3], predictiveAttributeNotDegree[i][4],
+                          predictiveAttributeNotDegree[i][5], predictiveAttributeNotDegree[i][6], predictiveAttributeNotDegree[i][7], predictiveAttributeNotDegree[i][8],
+                          predictiveAttributeNotDegree[i][9], predictiveAttributeNotDegree[i][10], predictiveAttributeNotDegree[i][11], predictiveAttributeNotDegree[i][12],
+                          predictiveAttributeNotDegree[i][13], predictiveAttributeNotDegree[i][14], predictiveAttributeNotDegree[i][15], predictiveAttributeNotDegree[i][16],
+                          predictiveAttributeNotDegree[i][17], predictiveAttributeNotDegree[i][18], predictiveAttributeNotDegree[i][19], predictiveAttributeNotDegree[i][20]])
+        test_result.append([predictiveAttributeNotDegree[i][2]])
 
-for k in mot_sta_stud_dict.keys():
-    for i in range(len(mot_sta_stud)):
-        if mot_sta_stud[i] == k:
-            mot_sta_stud[i] = mot_sta_stud_dict.get(k)
-
-for k in sta_stud_dict.keys():
-    for i in range(len(sta_stud)):
-        if sta_stud[i] == k:
-            sta_stud[i] = sta_stud_dict.get(k)
-
-for i in range(0,len(matr)):
-        predictiveAttribute.append([matr[i], cf[i], secondo[i], terzo[i], tot[i], CDS[i], Tipo_Cds[i], coorte[i], anni_carriera[i], anno_diploma[i],
-                        voto_diploma[i], Cod_School[i], tipo_mat[i], anno_laurea[i], voto_laurea[i], erasmus[i], tesi_estero[i], mot_sta_stud[i], sta_stud[i], fc[i]])
-
-with open('Cod_school.txt', 'w') as file:
-    file.write(json.dumps(Cod_School_dict))
-
-with open('Tipo_mat.txt', 'w') as file:
-    file.write(json.dumps(Tipo_mat_dict))
-
-with open('Mot_sta_stud.txt', 'w') as file:
-    file.write(json.dumps(mot_sta_stud_dict))
-
-with open('sta_stud.txt', 'w') as file:
-    file.write(json.dumps(sta_stud_dict))
-
-regressor = DecisionTreeRegressor(random_state=0)
-print(cross_val_score(regressor, predictiveAttribute[1:], targetValue[1:], cv=10))
-regressor.fit(predictiveAttribute[:2346], targetValue[:2346])
-print(regressor.score(predictiveAttribute[2347:], targetValue[2347:]))
-newStudent = [[2934, 100, 40, 20, 100, 0o6126, 1, 2015, 3, 2015, 100, 200, 7, 2018, 108, 0, 0, 2, 6, 0]]
-print("Predicted: ", regressor.predict(newStudent))
+regressor = DecisionTreeRegressor(random_state=0, min_samples_leaf=10)
+print(cross_val_score(regressor, train_set[1:], train_result[1:], cv=10))
+regressor.fit(train_set, train_result)
+print(regressor.score(test_set, test_result))
+#              matr cf    2  3 tot cds tipoCds coorte annicarriera annodiploma votodip codschool tipoMat annolaur votolaur erasmus tesi mot_sta sta fc
+newStudent = [[2933, 2928, 0, 0, 30, 1, 1, 2018, 1, 2018, 100, 200, 1, 0, 0, 0, 0, 1, 2, 0]]
+real_value = [30]
+predicted = regressor.predict(newStudent)
+print("Predicted: ", predicted)
+print("MSE: ", mean_squared_error(real_value, regressor.predict(newStudent)))
 print("Params: ", regressor.get_params())
 print("Feature Importance: ", regressor.feature_importances_)
+
+
+with open("DecisionTree.txt", "w") as f:
+    f = export_graphviz(regressor, out_file=f)
