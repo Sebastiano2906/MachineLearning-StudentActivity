@@ -1,0 +1,5 @@
+Rule: frozenset({'Sospeso', 'Trasferimento-Uscita', 'Scientifica'}) -> 0.009023354564755838
+Support: 0.009023354564755838
+Confidence: 0.85
+Lift: 67.66478873239437
+=====================================
