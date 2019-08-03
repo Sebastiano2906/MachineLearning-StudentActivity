@@ -42,7 +42,7 @@ for i in range(0, len(Maturità)):
 
 # df = pd.DataFrame(data={"Tipo_Maturita, Voto_Diploma, CFU_Primo": Total_Write})
 # df.to_csv("./TotalStudent.csv", sep=',', index=False,)
-Train_set, Test_set, Result,  Result_Test= train_test_split(Train_set, Result, test_size=0.3)
+Train_set, Test_set, Result,  Result_Test = train_test_split(Train_set, Result, test_size=0.3)
 Train_set, Result = np.array(Train_set), np.array(Result)
 Train_set, Result = np.array(Train_set), np.array(Result)
 model = LinearRegression()

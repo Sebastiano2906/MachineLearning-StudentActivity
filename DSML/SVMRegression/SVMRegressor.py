@@ -1,34 +1,7 @@
-"""
-Implementazione di un DecisonTreeRegressor. In questo file si cerca di effettuare la regressione sul campo "1", ovvero
-i CFU sostenuti al primo anno. Per farlo vengono presi in esame tutti gli attributi a disposizione. Siccome la regressione,
-aspetta in input solamente valori numerici, ho mappato le stringhe in valori numerici. La tecnica utilizzata è stata quella
-di utilizzare un dizionario, dove ogni elemento rappresenta la chiave e il valore è un semplice enumerazione. Eg.:
-Tipo_mat_dict= dict([(y,x+1) for x,y in enumerate(sorted((set(tipo_mat))))]) con questa riga, vengono mappate tutte le maturità,
-quindi "Scientifica" rappresenterà la chiave, e ad essa sarà associato un valore. Il risultato di questo mapping viene scritto nei file
-Cod_School.txt, Mot_sta_stud.txt, sta_stud.txt, Tipo_mat.txt
-
-Successivamente viene lanciato un decision tree, non prima di aver fatto cross-validation. Il punteggio ottenuto in termini di R2Score, è ottimo, 0.86.
-
-
-
-EDIT: MI SONO ACCORTO CHE IL MODELLO SI ADATTAVA TROPPO ALLA DISTRIBUZIONE DEGLI STUDENTI. INFATTI LE PREDIZIONI ERANO MOLTO PIù
-PRECISE QUANDO LO STUDENTE ERA UNO STUDENTE IN CORSO, E NON LAUREATO, PER FARE IN MODO DA SUDDIVIDERE GLI STUDENTI LAUREATI DA QUELI NON LAUREATI
-HO CREATO IL FILE WriteListDecisionTree.py DOVE EFFETTUO LA SEPARAZIONE DEI DUE TIPI DI STUDENTI. LEGGO I DATI DAI RISPETTIVI FILE E GENERO TRAINSET E TESTSET
-IN MODO DA MANTENERE UNA PERCENTUALE DI 80/20 DI COMPOSIZIONE. IL TRAIN SET QUINDI SARA COSTITUITO DALL 80% DEL DATASET TOTALE.
-
-PER VISUALIZZARE L'ALBERO OUTPUT DI QUESTO ALGORITMO COPIARE IL CONTENUTO DEL FILE DecisionTree.txt e incollare tutto nella TextBox del sito http://webgraphviz.com/ .
-
-Enjoy the happines.
-"""
-
+from sklearn.svm import LinearSVR
 import pandas as pd
-from sklearn.model_selection import cross_val_score
-from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import mean_squared_error
-from sklearn.tree import export_graphviz
-from matplotlib import pyplot as plt
-
-
+import numpy as np
 predictiveAttributeDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/DecisionTree/predictiveDegree.txt", orient='records', dtype=True,typ="series")
 predictiveAttributeNotDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/DecisionTree/predictiveNotDegree.txt", orient='records', dtype=True,typ="series")
 
@@ -74,35 +47,16 @@ for i in range(len(predictiveAttributeNotDegree)):
                           predictiveAttributeNotDegree[i][17], predictiveAttributeNotDegree[i][18], predictiveAttributeNotDegree[i][19], predictiveAttributeNotDegree[i][20]])
         test_result.append([predictiveAttributeNotDegree[i][2]])
 
-regressor = DecisionTreeRegressor(random_state=0, min_samples_leaf=10)
-print(cross_val_score(regressor, train_set[1:], train_result[1:], cv=10))
-regressor.fit(train_set, train_result)
-print(regressor.score(test_set, test_result))
-#              matr cf    2  3 tot cds tipoCds coorte annicarriera annodiploma votodip codschool tipoMat annolaur votolaur erasmus tesi mot_sta sta fc
+svm_reg = LinearSVR(epsilon=1.0, max_iter=10000000)
+train_result = np.array(train_result)
+svm_reg.fit(train_set, train_result.ravel())
+
+print(svm_reg.score(test_set, test_result))
 newStudent = [[2933, 2928, 0, 0, 30, 1, 1, 2018, 1, 2018, 100, 200, 1, 0, 0, 0, 0, 1, 2, 0]]
 real_value = [30]
-predicted = regressor.predict(newStudent)
+predicted = svm_reg.predict(newStudent)
+
 print("Predicted: ", predicted)
-print("MSE: ", mean_squared_error(real_value, regressor.predict(newStudent)))
-print("Params: ", regressor.get_params())
-print("Feature Importance: ", regressor.feature_importances_)
-from sklearn.model_selection import train_test_split
-import numpy as np
-def plot_learning_curves(model, X, y):
-    X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2)
-    train_errors, val_errors = [], []
-    for m in range(1, len(X_train)):
-        model.fit(X_train[:m], y_train[:m])
-        y_train_predict = model.predict(X_train[:m])
-        y_val_predict = model.predict(X_val)
-        train_errors.append(mean_squared_error(y_train_predict, y_train[:m]))
-        val_errors.append(mean_squared_error(y_val_predict, y_val))
-    plt.plot(np.sqrt(train_errors), "r-+", linewidth=2, label="train")
-    plt.plot(np.sqrt(val_errors), "b-", linewidth=3, label="val")
-    plt.show()
+print("MSE: ", mean_squared_error(real_value, svm_reg.predict(newStudent)))
+print("Params: ", svm_reg.get_params())
 
-
-plot_learning_curves(regressor, train_set, train_result)
-
-with open("DecisionTree.txt", "w") as f:
-    f = export_graphviz(regressor, out_file=f)
