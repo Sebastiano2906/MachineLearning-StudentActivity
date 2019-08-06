@@ -5,6 +5,10 @@ e si cerca di estrapolare un'equazione in grado di predirre il numero di CFU fat
 I risultati sono pessimi poichè:
 1. La quantità di dati a disposizione è minima
 2. Gli attributi predittivi presi in esame sono altamente scorrelati fra di loro
+
+
+
+A questo link è presente una spiegazione dettagliata di tutte le metriche di valutazione per gli algoritmi di regressione. https://medium.com/usf-msds/choosing-the-right-metric-for-machine-learning-models-part-1-a99d7d7414e4
 """
 
 import numpy as np
