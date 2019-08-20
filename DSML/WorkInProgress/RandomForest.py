@@ -11,8 +11,8 @@ from sklearn.metrics import mean_squared_error
 from sklearn.tree import export_graphviz
 
 
-predictiveAttributeDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/DecisionTree/predictiveDegree.txt", orient='records', dtype=True,typ="series")
-predictiveAttributeNotDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/DecisionTree/predictiveNotDegree.txt", orient='records', dtype=True,typ="series")
+predictiveAttributeDegree = pd.read_json("C:/Users/clara/PycharmProjects/prog2/DSML/DecisionTree/predictiveDegree.txt", orient='records', dtype=True,typ="series")
+predictiveAttributeNotDegree = pd.read_json("C:/Users/clara/PycharmProjects/prog2/DSML/DecisionTree/predictiveNotDegree.txt", orient='records', dtype=True,typ="series")
 
 
 train_set = []

@@ -46,12 +46,12 @@ Total_Set = []
 Tota_Result = []
 # Total_Write = []
 # Total_Temp = []
-
+count =0
 for i in range(0, len(Maturità)):
     tipo_maturità = int(Maturità[i][0][0])#primo volore predittivo
     voto_diploma = int(Maturità[i][0][1])#secondo valore predittivo
     cfu_primo = int(Maturità[i][0][2])#terzo valore predittivo
-
+    count=count+1
     TrainTemp = [tipo_maturità, voto_diploma, cfu_primo]
     Total_Temp = [tipo_maturità, voto_diploma,cfu_primo, int(Maturità[i][0][3])]
     Tota_Result.append(int(Maturità[i][0][3]))
@@ -60,7 +60,7 @@ for i in range(0, len(Maturità)):
     Train_set.append(TrainTemp)
     #Total_Write.append(Total_Temp)
 
-
+print(count)
 # df = pd.DataFrame(data={"Tipo_Maturita, Voto_Diploma, CFU_Primo": Total_Write})
 # df.to_csv("./TotalStudent.csv", sep=',', index=False,)
 Train_set, Test_set, Result,  Result_Test= train_test_split(Train_set, Result, test_size=0.3)
