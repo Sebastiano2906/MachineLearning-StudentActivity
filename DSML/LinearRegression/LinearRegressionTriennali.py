@@ -5,6 +5,10 @@ e si cerca di estrapolare un'equazione in grado di predirre il numero di CFU fat
 I risultati sono pessimi poichè:
 1. La quantità di dati a disposizione è minima
 2. Gli attributi predittivi presi in esame sono altamente scorrelati fra di loro
+
+
+
+A questo link è presente una spiegazione dettagliata di tutte le metriche di valutazione per gli algoritmi di regressione. https://medium.com/usf-msds/choosing-the-right-metric-for-machine-learning-models-part-1-a99d7d7414e4
 """
 
 import numpy as np
@@ -42,7 +46,7 @@ for i in range(0, len(Maturità)):
 
 # df = pd.DataFrame(data={"Tipo_Maturita, Voto_Diploma, CFU_Primo": Total_Write})
 # df.to_csv("./TotalStudent.csv", sep=',', index=False,)
-Train_set, Test_set, Result,  Result_Test= train_test_split(Train_set, Result, test_size=0.3)
+Train_set, Test_set, Result,  Result_Test = train_test_split(Train_set, Result, test_size=0.3)
 Train_set, Result = np.array(Train_set), np.array(Result)
 Train_set, Result = np.array(Train_set), np.array(Result)
 model = LinearRegression()

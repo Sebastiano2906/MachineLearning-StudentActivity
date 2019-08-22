@@ -19,7 +19,7 @@ laureati = [tuple(row) for row in csv.reader(open('C:/Users/sebas/PycharmProject
 laureatiAug = [tuple(row) for row in csv.reader(open('C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/Dataset/DatasetTriennaliAugmented.csv', 'r'))]
 Maturità = []
 Maturitàtemp = []
-MaturitàDict= {}
+MaturitàDict = {}
 SchoolDict = {}
 nome_Maturità = " "
 tipo_maturità = 0
@@ -54,7 +54,7 @@ for i in range(1, len(laureatiAug)):
         MaturitàAug.append(MaturitàtempAug)
 
 
-with open('C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/FileGenerated/ListStudent.txtListStudent.txt', 'w') as file:
+with open('C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/FileGenerated/ListStudent.txt', 'w') as file:
     file.write(json.dumps(Maturità))
 
 with open('C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/FileGenerated/ListStudentAug.txt', 'w') as file:
