@@ -4,6 +4,7 @@
     <extensionMap>
       <mapping ext="csv" type="Native" />
       <mapping pattern="temp" type="PLAIN_TEXT" />
+      <mapping pattern="SVMRegressorAllAttribute" type="Python" />
     </extensionMap>
   </component>
 </application>
