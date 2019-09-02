@@ -62,7 +62,7 @@ train_result = np.array(train_result)
 rnd_reg.fit(train_set, train_result.ravel())
 
 print(rnd_reg.score(test_set, test_result))
-#              matr cf    2  3 tot cds tipoCds coorte annicarriera annodiploma votodip codschool tipoMat annolaur votolaur erasmus tesi mot_sta sta fc
+#              0. matr 1.cf  2.2  3.3  4.tot  5.cds  6.tipoCds  7.coorte 8.annicarriera 9.annodiploma 10.votodip 11.codschool 12.tipoMat 13.annolaur  14.votolaur 15.erasmus 16.tesi 17.mot_sta 18.sta 19.fc
 newStudent = [[2933, 2928, 60, 60, 180, 1, 1, 2015, 3, 2015, 100, 200, 1, 2018, 111, 1, 1, 3, 10, 0]]
 real_value = [60]
 predicted = rnd_reg.predict(newStudent)

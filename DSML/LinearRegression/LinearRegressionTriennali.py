@@ -28,24 +28,14 @@ Test_size = int((len(Maturità)/100) * 20)
 Train_set = []
 Test_set = []
 Result_Test = []
-Total_Set = []
-Tota_Result = []
-# Total_Write = []
-# Total_Temp = []
+
 for i in range(0, len(Maturità)):
     tipo_maturità = int(Maturità[i][0][0])
     voto_diploma = int(Maturità[i][0][1])
     TrainTemp = [tipo_maturità, voto_diploma]
-    Total_Temp = [tipo_maturità, voto_diploma, int(Maturità[i][0][2])]
-    Tota_Result.append(int(Maturità[i][0][2]))
     Result.append(int(Maturità[i][0][2]))
-    Total_Set.append(TrainTemp)
     Train_set.append(TrainTemp)
-    #Total_Write.append(Total_Temp)
 
-
-# df = pd.DataFrame(data={"Tipo_Maturita, Voto_Diploma, CFU_Primo": Total_Write})
-# df.to_csv("./TotalStudent.csv", sep=',', index=False,)
 Train_set, Test_set, Result,  Result_Test = train_test_split(Train_set, Result, test_size=0.3)
 Train_set, Result = np.array(Train_set), np.array(Result)
 Train_set, Result = np.array(Train_set), np.array(Result)
@@ -97,9 +87,55 @@ def plot_learning_curves(model, X, y):
     plt.show()
 
 
-plot_learning_curves(model, Total_Set, Tota_Result)
 from sklearn.metrics import r2_score
 from sklearn.metrics import mean_squared_error
 
 print("R2Score : ", r2_score(Result_Test, y_pred_pred))
 print("MSE : ", mean_squared_error(Result_Test, y_pred_pred))
+
+predictiveAttributeDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-local/DSML/DecisionTree/predictiveDegree.txt", orient='records', dtype=True,typ="series")
+predictiveAttributeNotDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-local/DSML/DecisionTree/predictiveNotDegree.txt", orient='records', dtype=True,typ="series")
+
+
+train_set = []
+test_set = []
+train_result = []
+test_result = []
+count = 0
+train_percent = (len(predictiveAttributeDegree)/100)*80
+for i in range(len(predictiveAttributeDegree)):
+    if count < train_percent:
+        count = count + 1
+        train_set.append([predictiveAttributeNotDegree[i][0], predictiveAttributeNotDegree[i][1], predictiveAttributeNotDegree[i][6],
+                          predictiveAttributeNotDegree[i][7], predictiveAttributeNotDegree[i][9], predictiveAttributeNotDegree[i][10],
+                          predictiveAttributeNotDegree[i][11], predictiveAttributeNotDegree[i][12],predictiveAttributeNotDegree[i][17],
+                          predictiveAttributeNotDegree[i][18]])
+        train_result.append([predictiveAttributeDegree[i][2]])
+    else:
+        test_set.append([predictiveAttributeNotDegree[i][0], predictiveAttributeNotDegree[i][1], predictiveAttributeNotDegree[i][6],
+                          predictiveAttributeNotDegree[i][7], predictiveAttributeNotDegree[i][9], predictiveAttributeNotDegree[i][10],
+                          predictiveAttributeNotDegree[i][11], predictiveAttributeNotDegree[i][12],predictiveAttributeNotDegree[i][17],
+                          predictiveAttributeNotDegree[i][18]])
+        test_result.append([predictiveAttributeDegree[i][2]])
+train_percent = (len(predictiveAttributeNotDegree)/100)*80
+count = 0
+for i in range(len(predictiveAttributeNotDegree)):
+    if count < train_percent:
+        count = count + 1
+        train_set.append([predictiveAttributeNotDegree[i][0], predictiveAttributeNotDegree[i][1], predictiveAttributeNotDegree[i][6],
+                          predictiveAttributeNotDegree[i][7], predictiveAttributeNotDegree[i][9], predictiveAttributeNotDegree[i][10],
+                          predictiveAttributeNotDegree[i][11], predictiveAttributeNotDegree[i][12],predictiveAttributeNotDegree[i][17],
+                          predictiveAttributeNotDegree[i][18]])
+        train_result.append([predictiveAttributeNotDegree[i][2]])
+    else:
+        test_set.append([predictiveAttributeNotDegree[i][0], predictiveAttributeNotDegree[i][1], predictiveAttributeNotDegree[i][6],
+                          predictiveAttributeNotDegree[i][7], predictiveAttributeNotDegree[i][9], predictiveAttributeNotDegree[i][10],
+                          predictiveAttributeNotDegree[i][11], predictiveAttributeNotDegree[i][12],predictiveAttributeNotDegree[i][17],
+                          predictiveAttributeNotDegree[i][18]])
+        test_result.append([predictiveAttributeNotDegree[i][2]])
+
+lin_reg_tot = LinearRegression()
+lin_reg_tot.fit(train_set,train_result)
+r_sq = lin_reg_tot.score(train_set, train_result)
+print("-----ALL ATTRIBUTE-----: Coefficient of determination: ", r_sq)
+print("-----ALL ATTRIBUTE-----: slope: ", lin_reg_tot.coef_)
