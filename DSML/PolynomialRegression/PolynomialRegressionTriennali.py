@@ -45,6 +45,9 @@ print("Intercept: ", model.intercept_)
 print("Slope:", model.coef_)
 
 
+#   QUI COMINCIA LA PROVA CON TUTTI GLI ATTRIBUTI
+
+
 predictiveAttributeDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-local/DSML/DecisionTree/predictiveDegree.txt", orient='records', dtype=True,typ="series")
 predictiveAttributeNotDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-local/DSML/DecisionTree/predictiveNotDegree.txt", orient='records', dtype=True,typ="series")
 

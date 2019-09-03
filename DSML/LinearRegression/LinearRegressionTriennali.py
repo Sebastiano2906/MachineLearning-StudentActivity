@@ -93,6 +93,10 @@ from sklearn.metrics import mean_squared_error
 print("R2Score : ", r2_score(Result_Test, y_pred_pred))
 print("MSE : ", mean_squared_error(Result_Test, y_pred_pred))
 
+
+#   QUI COMINCIA LA PROVA CON TUTTI GLI ATTRIBUTI
+
+
 predictiveAttributeDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-local/DSML/DecisionTree/predictiveDegree.txt", orient='records', dtype=True,typ="series")
 predictiveAttributeNotDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-local/DSML/DecisionTree/predictiveNotDegree.txt", orient='records', dtype=True,typ="series")
 
