@@ -27,15 +27,15 @@ cod_school=json.load(open('C:/Users/clara/PycharmProjects/prog2/DSML/DecisionTre
 for i in range(1, len(laureati)):
     num=len(laureati[i][13])
     stringa=(laureati[i][13][1:num-1])
-    tipo_maturità=tip_mat.get(stringa)
-    voto_diploma = int(laureati[i][11])
-    fuori_corso = int (laureati[i][20])
+    tipo_maturità=float(tip_mat.get(stringa))
+    voto_diploma = float(laureati[i][11])
+    fuori_corso = float (laureati[i][20])
     """num = len(laureati[i][12])
        stringa = (laureati[i][12][1:num - 1])
        codice_mec=cod_school.get(stringa)
        print(codice_mec)"""
-    if fuori_corso!=0:
-      fuori_corso=1
+    if fuori_corso!=0.0:
+      fuori_corso=1.0
 
     CFU_primo = int(laureati[i][2])
     if CFU_primo != -1:

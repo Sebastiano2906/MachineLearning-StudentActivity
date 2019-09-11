@@ -10,19 +10,19 @@ import json
 from sklearn.preprocessing import LabelEncoder
 
 
-
 Maturità = json.load(open("C:/Users/clara/PycharmProjects/prog2/DSML_Task2/K-Means/ListStudent2.txt")) #ATTENZIONE AL PATH
+Laureato = [tuple(row) for row in csv.reader(open("C:/Users/clara/PycharmProjects/prog2/DSML_Task2/K-Means/DatasetTriennaliNuovo.csv", 'r'))]
 tipo_maturità=[]
 voto_diploma =[]
 cfu_primo =[]
 mat_student=[]
 fc=[]
-for i in range(0, len(Maturità)):
+for i in range(1, len(Laureato)):
    #mat_student.append(int(Maturità[i][0][0]))
-   tipo_maturità.append(int(Maturità[i][0][1]))  # primo volore predittivo
-   voto_diploma.append(int(Maturità[i][0][2]))  # secondo valore predittivo
-   cfu_primo.append( int(Maturità[i][0][3]))
-   fc.append(int(Maturità[i][0][4]))
+   tipo_maturità.append(int(Laureato[i][21]))  # primo volore predittivo
+   voto_diploma.append(int(Laureato[i][11]))  # secondo valore predittivo
+   cfu_primo.append( int(Laureato[i][2]))
+   fc.append(int(Laureato[i][20]))
 
 #for i in range(0,len(tipo_maturità)):
 #   print(tipo_maturità[i])
@@ -73,7 +73,7 @@ df_final = DataFrame(DataFrameFinale, columns=['TipoMaturità', 'VotoDiploma','C
 #print("-------------------------------------PROVA---------------------------------------------")
 #print(df_final)
 
-dt=[[11,80,30]]
+dt=[[11,70,50]]
 
 print(kmeans.predict(dt))
 count0=0
@@ -96,8 +96,8 @@ media3=0
 
 
 
-"""
 
+"""
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 x = np.array(df2['TipoMaturità'])
@@ -110,11 +110,11 @@ ax.set_zlabel('CFU1')
 ax.scatter(x,y,z, marker="s", c=kmeans.labels_.astype(float), s=50, cmap="RdBu", alpha=0.5 )
 
 plt.show()
+
 """
 
-
-df_final.to_csv("./ListaStudentCluster.csv", sep=',', index=False,)
-ClusterFile = [tuple(row) for row in csv.reader(open("./ListaStudentCluster.csv", 'r'))]
+df_final.to_csv("./ListaStudentClusterStatoStudenti.csv", sep=',', index=False,)
+ClusterFile = [tuple(row) for row in csv.reader(open("./ListaStudentClusterStatoStudenti.csv", 'r'))]
 
 
 
@@ -127,18 +127,17 @@ for i in range(1, len(ClusterFile)):
     if int(ClusterFile[i][4]) == 1:
         count1 = count1 +1
         if int(ClusterFile[i][3]) > 0:
-            countFc1 = countFc1 + 1
-"""
-    if int(ClusterFile[i][4]) == 2:
-        count2 = count2 +1
-        if int(ClusterFile[i][3]) > 0:
-            countFc2 = countFc2 +1
-    if int(ClusterFile[i][4]) == 3:
-        count3 = count3 +1
-        if int(ClusterFile[i][3]) > 0:
-         countFc3 = countFc3 + 1
+            countFc1 = countFc1 +1
 
-"""
+""" if int(ClusterFile[i][4]) == 2:
+       count2 = count2 +1
+       if int(ClusterFile[i][3]) > 0:
+           countFc2 = countFc2 +1
+   if int(ClusterFile[i][4]) == 3:
+       count3 = count3 +1
+       if int(ClusterFile[i][3]) > 0:
+        countFc3 = countFc3 + 1"""
+
 media0=countFc0/count0
 media1=countFc1/count1
 #media2=countFc2/count2

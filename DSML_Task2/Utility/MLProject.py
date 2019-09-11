@@ -75,6 +75,7 @@ for i in range(len(laureati)):
                 else:
                     tesi_erasmus = 1
                 state_stud = laureati[i][18]
+
                 mot_stat_stud = laureati[i][19]
                 if laureati[i][20] != '?':
                     if laureati[i][20] != '':

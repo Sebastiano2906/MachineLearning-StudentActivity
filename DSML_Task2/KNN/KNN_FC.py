@@ -39,8 +39,8 @@ X_test = scaler.transform(X_test)
 
 #Non esiste un valore ideale per K ed è selezionato dopo il test e la valutazione, tuttavia per iniziare, 5 sembra essere il valore più comunemente usato per l'algoritmo KNN.
 from sklearn.neighbors import KNeighborsClassifier
-classifier = KNeighborsClassifier(n_neighbors=8)
-arra=np.array([3,72,18])
+classifier = KNeighborsClassifier(n_neighbors=5)
+arra=np.array([11,72,18])
 arra = arra.reshape(1,-1)
 classifier.fit(X_train, y_train)
 print("predict",classifier.predict(arra))

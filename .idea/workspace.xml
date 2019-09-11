@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36a36402-c4a2-4936-a7c6-b9b91af22e52" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/MachineLearning-Local.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MachineLearning-Local.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -10,6 +11,12 @@
       <change beforePath="$PROJECT_DIR$/DSML/LinearRegression/LinearRegressionTriennali.py" beforeDir="false" afterPath="$PROJECT_DIR$/DSML/LinearRegression/LinearRegressionTriennali.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSML/PolynomialRegression/PolynomialRegressionTriennali.py" beforeDir="false" afterPath="$PROJECT_DIR$/DSML/PolynomialRegression/PolynomialRegressionTriennali.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSML/WorkInProgress/RandomForest.py" beforeDir="false" afterPath="$PROJECT_DIR$/DSML/WorkInProgress/RandomForest.py" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/DSML_Task2/Clara/Analisys.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSML_Task2/K-Means/ListaStudentCluster.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSML_Task2/K-Means/K-MeansStudent.py" beforeDir="false" afterPath="$PROJECT_DIR$/DSML_Task2/K-Means/K-MeansStudent.py" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +29,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< Updated upstream
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DSML/DecisionTree/Tipo_mat.txt">
           <provider selected="true" editor-type-id="text-editor" />
@@ -34,6 +42,40 @@
               <caret line="103" column="44" selection-start-line="103" selection-start-column="44" selection-end-line="103" selection-end-column="44" />
               <folding>
                 <element signature="e#188#206#0" expanded="true" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DSML_Task2/K-Means/K-MeansStudent.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="148" column="24" selection-start-line="148" selection-start-column="24" selection-end-line="148" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DSML_Task2/K-Means/ListaStudentCluster.csv">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DSML_Task2/KNN/WriteListStudent3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="47" selection-start-line="47" selection-end-line="47" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DSML_Task2/KNN/KNN_FC.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1006">
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
@@ -43,12 +85,17 @@
         <entry file="file://$PROJECT_DIR$/DSML/DecisionTree/sta_stud.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
+<<<<<<< Updated upstream
               <caret column="123" selection-start-column="123" selection-end-column="123" />
+=======
+              <caret column="128" selection-start-column="127" selection-end-column="128" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/DSML/DecisionTree/Mot_sta_stud.txt">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -58,13 +105,31 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="957" selection-start-column="947" selection-end-column="957" />
+=======
+        <entry file="file://$PROJECT_DIR$/DSML_Task2/LinearRegression/Lin_Reg_2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="491">
+              <caret line="145" selection-start-line="145" selection-end-line="145" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/DSML/DecisionTree/cf.txt">
           <provider selected="true" editor-type-id="text-editor" />
+=======
+        <entry file="file://$PROJECT_DIR$/DSML_Task2/K-Means/WriteListStudent2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="33" column="42" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+>>>>>>> Stashed changes
         </entry>
       </file>
     </leaf>
@@ -83,8 +148,12 @@
       <find>Tecnico</find>
       <find>Perito</find>
       <find>Result</find>
+<<<<<<< Updated upstream
       <find>AVTD02201D</find>
       <find>NAPS01301N</find>
+=======
+      <find>3</find>
+>>>>>>> Stashed changes
     </findStrings>
     <replaceStrings>
       <replace>0</replace>
@@ -153,6 +222,7 @@
               <item name="MachineLearning-Local" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
+<<<<<<< Updated upstream
               <item name="MachineLearning-Local" type="b2602c69:ProjectViewProjectNode" />
               <item name="MachineLearning-Local" type="462c0819:PsiDirectoryNode" />
               <item name="DSML" type="462c0819:PsiDirectoryNode" />
@@ -162,6 +232,24 @@
               <item name="MachineLearning-Local" type="462c0819:PsiDirectoryNode" />
               <item name="DSML" type="462c0819:PsiDirectoryNode" />
               <item name="DecisionTree" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="prog2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prog2" type="462c0819:PsiDirectoryNode" />
+              <item name="DSML_Task2" type="462c0819:PsiDirectoryNode" />
+              <item name="K-Means" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="prog2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prog2" type="462c0819:PsiDirectoryNode" />
+              <item name="DSML_Task2" type="462c0819:PsiDirectoryNode" />
+              <item name="KNN" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="prog2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prog2" type="462c0819:PsiDirectoryNode" />
+              <item name="DSML_Task2" type="462c0819:PsiDirectoryNode" />
+              <item name="LinearRegression" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Stashed changes
             </path>
           </expand>
           <select />
@@ -328,6 +416,7 @@
       <workItem from="1566213173601" duration="4625000" />
       <workItem from="1566230427694" duration="1343000" />
       <workItem from="1566313451031" duration="5161000" />
+      <workItem from="1568103293986" duration="9176000" />
     </task>
     <task id="LOCAL-00001" summary="Allo stato dei fatti lo script separa il Dataset in due. Vengono infatti creati il Dataset dei magistrali e dei triennali. Per ognuno di essi viene preso in considerazione solamente chi non ha eccessivi anni di fuori corso. I valori nulli, siccome ci serviranno campi interi vengono mappati con -1. L2 -&gt; 3, LM-&gt;2.&#10;&#10;I Dataset forniti sono già ripuliti, se provate ad eseguire lo script, il file csv che verrà generato sarà semplicemente una scrittura delle liste, quindi con la sintassi delle liste di python.&#10;Ho provveduto a pulirlo io manualmente.&#10;&#10;Good Work lady and gentlemen. It is an honor to work with you!!">
       <created>1563040392507</created>
@@ -389,7 +478,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17528000" />
+    <option name="totallyTimeSpent" value="26704000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -403,12 +492,20 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
+<<<<<<< Updated upstream
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4965278" visible="true" weight="0.1704698" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965278" visible="true" weight="0.17837837" />
+>>>>>>> Stashed changes
       <window_info id="Structure" order="1" sideWeight="0.5021097" side_tool="true" weight="0.16979866" />
       <window_info id="Favorites" order="2" sideWeight="0.5034722" side_tool="true" weight="0.23058252" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+<<<<<<< Updated upstream
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5963173" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3072464" />
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -425,7 +522,7 @@
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="right" id="R Packages" order="4" weight="0.32996634" />
       <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="SciView" order="6" weight="0.32905406" />
+      <window_info anchor="right" id="SciView" order="6" weight="0.79594594" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4965278" visible="true" weight="0.14186667" />
@@ -463,12 +560,13 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/prog2$RandomForest.coverage" NAME="RandomForest Coverage Results" MODIFIED="1566217293881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DSML/WorkInProgress" />
-    <SUITE FILE_PATH="coverage/prog2$K_MeansStudent.coverage" NAME="K-MeansStudent Coverage Results" MODIFIED="1566318814804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DSML_Task2/K-Means" />
+    <SUITE FILE_PATH="coverage/prog2$K_MeansStudent.coverage" NAME="K-MeansStudent Coverage Results" MODIFIED="1568112520786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DSML_Task2/K-Means" />
     <SUITE FILE_PATH="coverage/prog2$LinearRegressionTriennali.coverage" NAME="LinearRegressionTriennali Coverage Results" MODIFIED="1566216257024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DSML_Task2/LinearRegression" />
     <SUITE FILE_PATH="coverage/prog2$LinearRegressionNew.coverage" NAME="LinearRegressionNew Coverage Results" MODIFIED="1566216223146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DSML_Task2/LinearRegression" />
     <SUITE FILE_PATH="coverage/prog2$PolynomialRegressionTriennali.coverage" NAME="PolynomialRegressionTriennali Coverage Results" MODIFIED="1566217139721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DSML_Task2/PolynomialRegression" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/DSML/FileGenerated/ListStudentAug.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -482,6 +580,8 @@
     <entry file="file://$PROJECT_DIR$/DSML/FileGenerated/ListDatasetAug.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+=======
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/DSML/FileGenerated/Mot_sta_stud.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -611,18 +711,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DSML_Task2/LinearRegression/Lin_Reg_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2363">
-          <caret line="145" selection-start-line="145" selection-end-line="145" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DSML_Task2/PolynomialRegression/PolynomialRegressionTriennali.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/DSML_Task2/LinearRegression/ListaStudentiModificata.txt">
       <provider selected="true" editor-type-id="text-editor" />
+=======
+    <entry file="file://$PROJECT_DIR$/DSML/WorkInProgress/RandomForest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="100" selection-start-line="14" selection-start-column="100" selection-end-line="14" selection-end-column="100" />
+          <folding>
+            <element signature="e#188#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+>>>>>>> Stashed changes
     </entry>
     <entry file="file://$PROJECT_DIR$/DSML_Task2/FileGenerated/ListStudent.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -639,7 +744,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DSML_Task2/LinearRegression/LinearRegressionTriennali.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="833">
           <caret line="55" column="57" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="79" />
           <folding>
             <element signature="e#905#923#0" expanded="true" />
@@ -647,9 +752,12 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DSML_Task2/LinearRegression/ListaStudentiModificata.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/DSML_Task2/LinearRegression/LinearRegressionNew.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="374">
           <caret line="22" selection-start-line="22" selection-end-line="26" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -664,17 +772,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DSML_Task2/KNN/KNN_FC.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1006">
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DSML_Task2/K-Means/ListStudentCluster.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DSML_Task2/KNN/WriteListStudent3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="47" selection-start-line="47" selection-end-line="47" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DSML_Task2/K-Means/ListaStudentCluster.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DSML_Task2/LinearRegression/Lin_Reg_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DSML_Task2/K-Means/WriteListStudent2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="33" column="42" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DSML_Task2/K-Means/ListStudent2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+          <caret column="128" selection-start-column="127" selection-end-column="128" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DSML_Task2/K-Means/K-MeansStudent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="90" column="28" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
+        <state relative-caret-position="351">
+          <caret line="148" column="24" selection-start-line="148" selection-start-column="24" selection-end-line="148" selection-end-column="24" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
