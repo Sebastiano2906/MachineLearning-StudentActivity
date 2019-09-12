@@ -18,24 +18,27 @@ import json
 """-----------------------ATTENZIONE NON RILANCIARE MI è SERVITO PER IL CSV----------------------"""
 
 from sklearn.preprocessing import LabelEncoder
-laureati = [tuple(row) for row in csv.reader(open('C:/Users/clara/PycharmProjects/prog2/DSML_Task2/Dataset/DatasetTriennali.csv', 'r'))]
+laureati = [tuple(row) for row in csv.reader(open('C:/Users/clara/PycharmProjects/prog2/DSML_Task2/K-Means/DatasetTriennaliNuovo.csv', 'r'))]
 Maturità = []
 tip_mat= json.load(open('C:/Users/clara/PycharmProjects/prog2/DSML/FileGenerated/Tipo_mat.txt'))
 cod_school=json.load(open('C:/Users/clara/PycharmProjects/prog2/DSML/DecisionTree/Cod_school.txt'))
 
 
 for i in range(1, len(laureati)):
-    num=len(laureati[i][13])
-    stringa=(laureati[i][13][1:num-1])
-    tipo_maturità=float(tip_mat.get(stringa))
+  #  num=len(laureati[i][13])
+   # stringa=(laureati[i][13][1:num-1])
+    #tipo_maturità=float(tip_mat.get(stringa))
+    tipo_maturità= float(laureati[i][21])
     voto_diploma = float(laureati[i][11])
     fuori_corso = float (laureati[i][20])
     """num = len(laureati[i][12])
        stringa = (laureati[i][12][1:num - 1])
        codice_mec=cod_school.get(stringa)
-       print(codice_mec)"""
+       print(codice_mec)
     if fuori_corso!=0.0:
       fuori_corso=1.0
+    """
+
 
     CFU_primo = int(laureati[i][2])
     if CFU_primo != -1:
@@ -45,5 +48,5 @@ for i in range(1, len(laureati)):
 
 
 df = pd.DataFrame(data={"TipoMaturità, VotoDiploma,CFU1, AnniFuoriCorso": Maturità})
-df.to_csv("./ListaStudenti4.csv", sep=',', index=False,)
+df.to_csv("./ListaStudentiModificata_ConseideraDatasetNuovo.csv", sep=',', index=False,)
 
