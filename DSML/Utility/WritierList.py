@@ -7,6 +7,7 @@ import os
 import pandas as pd
 import csv
 import json
+import numpy as np
 DEGREE_PATH= "C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/Dataset/DatasetTriennali.csv"
 
 def load_degree_data(degree_path=DEGREE_PATH):
@@ -17,6 +18,7 @@ degree_db = load_degree_data()
 
 laureati = [tuple(row) for row in csv.reader(open('C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/Dataset/DatasetTriennali.csv', 'r'))]
 laureatiAug = [tuple(row) for row in csv.reader(open('C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/Dataset/DatasetTriennaliAugmented.csv', 'r'))]
+tipo_mat = json.load(open("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/DecisionTree/Tipo_mat.txt"))
 Maturità = []
 Maturitàtemp = []
 MaturitàDict = {}
@@ -31,7 +33,7 @@ for i in range(1, len(laureati)):
     cod_Scuola = laureati[i][12]
     tipo_maturità = int(abs(hash(nome_Maturità)) % (10 ** 8))
     nome_Scuola = int(abs(hash(cod_Scuola)) % (10 ** 8))
-    classe_maturita = int(laureati[i][21])
+    classe_maturita = tipo_mat[nome_Maturità[1:(len(nome_Maturità)-1)]]
     MaturitàDict[tipo_maturità] = nome_Maturità
     SchoolDict[nome_Scuola] = cod_Scuola
     voto_diploma = int(laureati[i][11])

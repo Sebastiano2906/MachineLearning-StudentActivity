@@ -68,16 +68,16 @@ train_percent = (len(predictiveAttributeDegree)/100)*80
 for i in range(len(predictiveAttributeDegree)):
     if count < train_percent:
         count = count + 1
-        train_set_tot.append([predictiveAttributeNotDegree[i][0], predictiveAttributeNotDegree[i][1], predictiveAttributeNotDegree[i][6],
-                          predictiveAttributeNotDegree[i][7], predictiveAttributeNotDegree[i][9], predictiveAttributeNotDegree[i][10],
-                          predictiveAttributeNotDegree[i][11], predictiveAttributeNotDegree[i][12],predictiveAttributeNotDegree[i][17],
-                          predictiveAttributeNotDegree[i][18]])
+        train_set_tot.append([predictiveAttributeDegree[i][0], predictiveAttributeDegree[i][1], predictiveAttributeDegree[i][6],
+                          predictiveAttributeDegree[i][7], predictiveAttributeDegree[i][9], predictiveAttributeDegree[i][10],
+                          predictiveAttributeDegree[i][11], predictiveAttributeDegree[i][12],predictiveAttributeDegree[i][17],
+                          predictiveAttributeDegree[i][18]])
         train_result_tot.append([predictiveAttributeDegree[i][2]])
     else:
-        test_set_tot.append([predictiveAttributeNotDegree[i][0], predictiveAttributeNotDegree[i][1], predictiveAttributeNotDegree[i][6],
-                          predictiveAttributeNotDegree[i][7], predictiveAttributeNotDegree[i][9], predictiveAttributeNotDegree[i][10],
-                          predictiveAttributeNotDegree[i][11], predictiveAttributeNotDegree[i][12],predictiveAttributeNotDegree[i][17],
-                          predictiveAttributeNotDegree[i][18]])
+        test_set_tot.append([predictiveAttributeDegree[i][0], predictiveAttributeDegree[i][1], predictiveAttributeDegree[i][6],
+                          predictiveAttributeDegree[i][7], predictiveAttributeDegree[i][9], predictiveAttributeDegree[i][10],
+                          predictiveAttributeDegree[i][11], predictiveAttributeDegree[i][12],predictiveAttributeDegree[i][17],
+                          predictiveAttributeDegree[i][18]])
         test_result_tot.append([predictiveAttributeDegree[i][2]])
 train_percent = (len(predictiveAttributeNotDegree)/100)*80
 count = 0
@@ -96,10 +96,11 @@ for i in range(len(predictiveAttributeNotDegree)):
                           predictiveAttributeNotDegree[i][18]])
         test_result_tot.append([predictiveAttributeNotDegree[i][2]])
 train_result_tot = np.array(train_result_tot)
+test_result_tot = np.array(test_result_tot)
 rnd_reg_AllAttribute = RandomForestRegressor(n_estimators=500, max_leaf_nodes=10, n_jobs=-1, max_depth=10)
 rnd_reg_AllAttribute.fit(train_set_tot, train_result_tot.ravel())
 
-print(rnd_reg_AllAttribute.score(test_set_tot, test_result_tot))
+print(rnd_reg_AllAttribute.score(test_set_tot, test_result_tot.ravel()))
 #              0. matr 1.cf  6.tipoCds  7.coorte  9.annodiploma 10.votodip 11.codschool 12.tipoMat  17.mot_sta 18.sta
 newStudent = [[1999, 2928, 1, 2018, 2018, 60, 54, 9, 1, 2]]
 real_value = [30]

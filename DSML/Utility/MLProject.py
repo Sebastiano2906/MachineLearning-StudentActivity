@@ -173,19 +173,3 @@ with open('DatasetStudenti.csv', 'r') as f:
 
 """
 
-"""
-#FUNZIONE PER SPLITTARE IL DATASET
-"""
-"""
-def split_train_test(data, test_ratio):
-        shuffled_indices = np.random.permutation(len(data))
-        test_set_size = int(len(data) * test_ratio)
-        test_indices = shuffled_indices[:test_set_size]
-        train_indices = shuffled_indices[test_set_size:]
-        return data.iloc[train_indices], data.iloc[test_indices]
-
-train_set, test_set = train_test_split(degree_db,test_size=0.3, random_state=42)
-print(len(train_set), "train +", len(test_set), "test")
-
-corr_matrix = degree_db.corr()
-print(corr_matrix)"""
