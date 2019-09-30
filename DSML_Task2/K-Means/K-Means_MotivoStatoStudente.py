@@ -143,6 +143,10 @@ media1=countFc1/count1
 #media2=countFc2/count2
 #media3=countFc3/count3
 
+print("numero NON fuori corso :",countFc0)
+print("numero fuori corso :",countFc1)
+print("numero NON fuori corso PREDETTO :",count0)
+print("numero fuori corso PREDETTO :",count1)
 print("Cluster media fc 0 1 2 3 :")
 print(media0,media1)
 
