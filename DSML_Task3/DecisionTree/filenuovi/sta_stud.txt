@@ -1,0 +1,1 @@
+{"Imm_da_rincunciatario": 1, "Iscrizione_Accademia_Militare": 2, "PASSAGGIO": 3, "Decadenza": 4, "Immatr-per-studente-decaduto": 5, "Trasferimento-Uscita": 6, "Laureato": 7, "MALATTIA": 8, "Rinuncia": 9, "Immatricolazione": 10, "Trasf_in_ingresso": 11}
