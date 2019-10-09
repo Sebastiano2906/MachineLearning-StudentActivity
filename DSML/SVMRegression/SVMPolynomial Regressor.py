@@ -15,20 +15,20 @@ train_percent = (len(predictiveAttributeDegree)/100)*80
 for i in range(len(predictiveAttributeDegree)):
     if count < train_percent:
         count = count + 1
-        train_set.append([predictiveAttributeDegree[i][10], predictiveAttributeDegree[i][12]])
+        train_set.append([predictiveAttributeDegree[i][11], predictiveAttributeDegree[i][13]])
         train_result.append([predictiveAttributeDegree[i][2]])
     else:
-        test_set.append([predictiveAttributeDegree[i][10], predictiveAttributeDegree[i][12]])
+        test_set.append([predictiveAttributeDegree[i][11], predictiveAttributeDegree[i][13]])
         test_result.append([predictiveAttributeDegree[i][2]])
 train_percent = (len(predictiveAttributeNotDegree)/100)*80
 count = 0
 for i in range(len(predictiveAttributeNotDegree)):
     if count < train_percent:
         count = count + 1
-        train_set.append([predictiveAttributeNotDegree[i][10], predictiveAttributeNotDegree[i][12]])
+        train_set.append([predictiveAttributeNotDegree[i][11], predictiveAttributeNotDegree[i][13]])
         train_result.append([predictiveAttributeNotDegree[i][2]])
     else:
-        test_set.append([predictiveAttributeNotDegree[i][10], predictiveAttributeNotDegree[i][12]])
+        test_set.append([predictiveAttributeNotDegree[i][11], predictiveAttributeNotDegree[i][13]])
         test_result.append([predictiveAttributeNotDegree[i][2]])
 
 svm_reg = SVR(kernel="poly", degree=2, C=50, epsilon=1.0, gamma="auto")

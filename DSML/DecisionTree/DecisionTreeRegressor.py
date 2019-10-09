@@ -43,20 +43,20 @@ train_percent = (len(predictiveAttributeDegree)/100)*80
 for i in range(len(predictiveAttributeDegree)):
     if count < train_percent:
         count = count + 1
-        train_set.append([predictiveAttributeDegree[i][10], predictiveAttributeDegree[i][12]])
+        train_set.append([predictiveAttributeDegree[i][11], predictiveAttributeDegree[i][13]])
         train_result.append([predictiveAttributeDegree[i][2]])
     else:
-        test_set.append([predictiveAttributeDegree[i][10], predictiveAttributeDegree[i][12]])
+        test_set.append([predictiveAttributeDegree[i][11], predictiveAttributeDegree[i][13]])
         test_result.append([predictiveAttributeDegree[i][2]])
 train_percent = (len(predictiveAttributeNotDegree)/100)*80
 count = 0
 for i in range(len(predictiveAttributeNotDegree)):
     if count < train_percent:
         count = count + 1
-        train_set.append([predictiveAttributeNotDegree[i][10], predictiveAttributeNotDegree[i][12]])
+        train_set.append([predictiveAttributeNotDegree[i][11], predictiveAttributeNotDegree[i][13]])
         train_result.append([predictiveAttributeNotDegree[i][2]])
     else:
-        test_set.append([predictiveAttributeNotDegree[i][10], predictiveAttributeNotDegree[i][12]])
+        test_set.append([predictiveAttributeNotDegree[i][11], predictiveAttributeNotDegree[i][13]])
         test_result.append([predictiveAttributeNotDegree[i][2]])
 
 
@@ -64,12 +64,11 @@ regressor = DecisionTreeRegressor(random_state=0, min_samples_leaf=10)
 print(cross_val_score(regressor, train_set[1:], train_result[1:], cv=10))
 regressor.fit(train_set, train_result)
 print(regressor.score(test_set, test_result))
-#              matr cf    2  3 tot cds tipoCds coorte annicarriera annodiploma votodip codschool tipoMat annolaur votolaur erasmus tesi mot_sta sta fc
-newStudent = [[100, 11]]
-real_value = [40]
+newStudent = [[9,92]]
+realValue = [42]
 predicted = regressor.predict(newStudent)
-print("Predicted: ", predicted)
-print("MSE: ", mean_squared_error(real_value, regressor.predict(newStudent)))
+print("Predetto : {}".format(predicted))
+print("errore : {}".format(mean_squared_error(realValue, predicted)))
 print("Params: ", regressor.get_params())
 print("Feature Importance: ", regressor.feature_importances_)
 
@@ -87,16 +86,16 @@ train_percent = (len(predictiveAttributeDegree)/100)*80
 for i in range(len(predictiveAttributeDegree)):
     if count < train_percent:
         count = count + 1
-        train_set_tot.append([predictiveAttributeNotDegree[i][0], predictiveAttributeNotDegree[i][1], predictiveAttributeNotDegree[i][6],
-                          predictiveAttributeNotDegree[i][7], predictiveAttributeNotDegree[i][9], predictiveAttributeNotDegree[i][10],
-                          predictiveAttributeNotDegree[i][11], predictiveAttributeNotDegree[i][12],predictiveAttributeNotDegree[i][17],
-                          predictiveAttributeNotDegree[i][18]])
+        train_set_tot.append([predictiveAttributeDegree[i][0], predictiveAttributeDegree[i][1], predictiveAttributeDegree[i][6],
+                          predictiveAttributeDegree[i][7], predictiveAttributeDegree[i][8], predictiveAttributeDegree[i][9],
+                          predictiveAttributeDegree[i][10], predictiveAttributeDegree[i][11], predictiveAttributeDegree[i][12],
+                          predictiveAttributeDegree[i][13], predictiveAttributeDegree[i][17]])
         train_result_tot.append([predictiveAttributeDegree[i][2]])
     else:
-        test_set_tot.append([predictiveAttributeNotDegree[i][0], predictiveAttributeNotDegree[i][1], predictiveAttributeNotDegree[i][6],
-                          predictiveAttributeNotDegree[i][7], predictiveAttributeNotDegree[i][9], predictiveAttributeNotDegree[i][10],
-                          predictiveAttributeNotDegree[i][11], predictiveAttributeNotDegree[i][12],predictiveAttributeNotDegree[i][17],
-                          predictiveAttributeNotDegree[i][18]])
+        test_set_tot.append([predictiveAttributeDegree[i][0], predictiveAttributeDegree[i][1], predictiveAttributeDegree[i][6],
+                          predictiveAttributeDegree[i][7], predictiveAttributeDegree[i][8], predictiveAttributeDegree[i][9],
+                          predictiveAttributeDegree[i][10], predictiveAttributeDegree[i][11], predictiveAttributeDegree[i][12],
+                          predictiveAttributeDegree[i][13], predictiveAttributeDegree[i][17]])
         test_result_tot.append([predictiveAttributeDegree[i][2]])
 train_percent = (len(predictiveAttributeNotDegree)/100)*80
 count = 0
@@ -104,27 +103,26 @@ for i in range(len(predictiveAttributeNotDegree)):
     if count < train_percent:
         count = count + 1
         train_set_tot.append([predictiveAttributeNotDegree[i][0], predictiveAttributeNotDegree[i][1], predictiveAttributeNotDegree[i][6],
-                          predictiveAttributeNotDegree[i][7], predictiveAttributeNotDegree[i][9], predictiveAttributeNotDegree[i][10],
-                          predictiveAttributeNotDegree[i][11], predictiveAttributeNotDegree[i][12],predictiveAttributeNotDegree[i][17],
-                          predictiveAttributeNotDegree[i][18]])
+                          predictiveAttributeNotDegree[i][7], predictiveAttributeNotDegree[i][8], predictiveAttributeNotDegree[i][9],
+                          predictiveAttributeNotDegree[i][10], predictiveAttributeNotDegree[i][11], predictiveAttributeNotDegree[i][12],
+                          predictiveAttributeNotDegree[i][13], predictiveAttributeNotDegree[i][17]])
         train_result_tot.append([predictiveAttributeNotDegree[i][2]])
     else:
         test_set_tot.append([predictiveAttributeNotDegree[i][0], predictiveAttributeNotDegree[i][1], predictiveAttributeNotDegree[i][6],
-                          predictiveAttributeNotDegree[i][7], predictiveAttributeNotDegree[i][9], predictiveAttributeNotDegree[i][10],
-                          predictiveAttributeNotDegree[i][11], predictiveAttributeNotDegree[i][12],predictiveAttributeNotDegree[i][17],
-                          predictiveAttributeNotDegree[i][18]])
+                          predictiveAttributeNotDegree[i][7], predictiveAttributeNotDegree[i][8], predictiveAttributeNotDegree[i][9],
+                          predictiveAttributeNotDegree[i][10], predictiveAttributeNotDegree[i][11], predictiveAttributeNotDegree[i][12],
+                          predictiveAttributeNotDegree[i][13], predictiveAttributeNotDegree[i][17]])
         test_result_tot.append([predictiveAttributeNotDegree[i][2]])
 
 regressorAllAttribute = DecisionTreeRegressor(random_state=0, min_samples_leaf=10)
 print(cross_val_score(regressorAllAttribute, train_set_tot[1:], train_result_tot[1:], cv=10))
 regressorAllAttribute.fit(train_set_tot, train_result_tot)
 print(regressorAllAttribute.score(test_set_tot, test_result_tot))
-#              0. matr 1.cf  6.tipoCds  7.coorte  9.annodiploma 10.votodip 11.codschool 12.tipoMat  17.mot_sta 18.sta
-newStudent = [[2933, 2928, 1, 2015, 2015, 100, 200, 9, 3, 10]]
-real_value = [30]
+newStudent = [[633, 1355, 1, 1, 2013, 3, 2013, 92, 54, 9, 0]]
+realValue = [42]
 predicted = regressorAllAttribute.predict(newStudent)
 print("---ALL ATTRIBUTE----: Predicted: ", predicted)
-print("---ALL ATTRIBUTE----: MSE: ", mean_squared_error(real_value, regressorAllAttribute.predict(newStudent)))
+print("---ALL ATTRIBUTE----: MSE: ", mean_squared_error(realValue, predicted))
 print("---ALL ATTRIBUTE----: Params: ", regressorAllAttribute.get_params())
 print("---ALL ATTRIBUTE----: Feature Importance: ", regressorAllAttribute.feature_importances_)
 from sklearn.model_selection import train_test_split
