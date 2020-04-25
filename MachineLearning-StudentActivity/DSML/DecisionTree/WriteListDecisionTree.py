@@ -12,7 +12,7 @@ import json
 import numpy as np
 import pandas as pd
 
-student = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/FileGenerated/ListDataset.txt", orient='records',dtype=True)
+student = pd.read_json("../MachineLearning-StudentActivity/DSML/FileGenerated/ListDataset.txt", orient='records',dtype=True)
 matr = np.array(student[0][1:])
 cf = np.array(student[1][1:])
 targetValue = np.array(student[2][1:])

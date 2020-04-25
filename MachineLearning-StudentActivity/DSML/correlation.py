@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
 from sklearn import preprocessing
 
 
-data = pd.read_csv("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/Dataset/DatasetTriennali.csv", encoding='utf-8')
+data = pd.read_csv("../MachineLearning-StudentActivity/DSML/Dataset/DatasetTriennali.csv", encoding='utf-8')
 le = preprocessing.LabelEncoder()
 
 DataFrameRichiesta = pd.DataFrame(

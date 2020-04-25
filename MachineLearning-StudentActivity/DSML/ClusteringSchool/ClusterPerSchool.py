@@ -4,8 +4,8 @@ from sklearn.cluster import KMeans
 
 
 
-predictiveAttributeDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/DecisionTree/predictiveDegree.txt", orient='records', dtype=True,typ="series")
-predictiveAttributeNotDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/DecisionTree/predictiveNotDegree.txt", orient='records', dtype=True,typ="series")
+predictiveAttributeDegree = pd.read_json("../MachineLearning-StudentActivity/DSML/DecisionTree/predictiveDegree.txt", orient='records', dtype=True,typ="series")
+predictiveAttributeNotDegree = pd.read_json("../MachineLearning-StudentActivity/DSML/DecisionTree/predictiveNotDegree.txt", orient='records', dtype=True,typ="series")
 
 School = []
 Students = []

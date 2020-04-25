@@ -14,7 +14,7 @@ from sklearn.linear_model import LinearRegression
 import pandas as pd
 from sklearn.metrics import r2_score,mean_squared_error
 
-Maturità = json.load(open("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/FileGenerated/ListStudentAug.txt"))
+Maturità = json.load(open("../MachineLearning-StudentActivity/DSML/FileGenerated/ListDatasetAug.txt"))
 Train_size = int((len(Maturità) / 100) * 80)
 Test_size = int((len(Maturità)/100) * 20)
 Train_set = []
@@ -79,8 +79,8 @@ print("Slope:", model.coef_)
 #   QUI COMINCIA LA PROVA CON TUTTI GLI ATTRIBUTI
 
 
-predictiveAttributeDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-local/DSML/DecisionTree/predictiveDegree.txt", orient='records', dtype=True,typ="series")
-predictiveAttributeNotDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-local/DSML/DecisionTree/predictiveNotDegree.txt", orient='records', dtype=True,typ="series")
+predictiveAttributeDegree = pd.read_json("../MachineLearning-StudentActivity/DSML/DecisionTree/predictiveDegree.txt", orient='records', dtype=True,typ="series")
+predictiveAttributeNotDegree = pd.read_json("MachineLearning-StudentActivity/DSML/DecisionTree/predictiveNotDegree.txt", orient='records', dtype=True,typ="series")
 
 
 train_set = []

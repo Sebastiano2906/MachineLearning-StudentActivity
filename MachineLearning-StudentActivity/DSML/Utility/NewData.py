@@ -4,8 +4,8 @@ import csv
 import json
 
 
-newData = [tuple(row) for row in csv.reader(open('C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/Dataset/newdata.csv', 'r'))]
-tipoMat = json.load(open("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/FileGenerated/Tipo_mat.txt"))
+newData = [tuple(row) for row in csv.reader(open('../MachineLearning-StudentActivity/DSML/Dataset/newdata.csv', 'r'))]
+tipoMat = json.load(open("../MachineLearning-StudentActivity/DSML/FileGenerated/Tipo_mat.txt"))
 student = []
 studentTemp = []
 for i in range(1, len(newData)):
@@ -19,5 +19,5 @@ for i in range(1, len(newData)):
         studentTemp = [id, school, voto_dip, cfu]
         student.append(studentTemp)
 
-with open('C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/FileGenerated/newData.txt', 'w') as file:
+with open('../MachineLearning-StudentActivity/DSML/Dataset/newdata.csv', 'w') as file:
     file.write(json.dumps(student))

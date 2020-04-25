@@ -23,7 +23,7 @@ from sklearn.metrics import r2_score
 Predictive_Value = []
 predictiveTemp = []
 Result = []
-Maturità = json.load(open("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/FileGenerated/ListStudent.txt")) #ATTENZIONE AL PATH
+Maturità = json.load(open("../MachineLearning-StudentActivity/DSML/FileGenerated/ListStudent.txt")) #ATTENZIONE AL PATH
 Train_size = int((len(Maturità) / 100) * 80)
 Test_size = int((len(Maturità)/100) * 20)
 Train_set = []
@@ -112,8 +112,8 @@ plt.show()
 #   QUI COMINCIA LA PROVA CON TUTTI GLI ATTRIBUTI
 
 
-predictiveAttributeDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-local/DSML/DecisionTree/predictiveDegree.txt", orient='records', dtype=True,typ="series")
-predictiveAttributeNotDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-local/DSML/DecisionTree/predictiveNotDegree.txt", orient='records', dtype=True,typ="series")
+predictiveAttributeDegree = pd.read_json("../MachineLearning-StudentActivity/DSML/DecisionTree/predictiveDegree.txt", orient='records', dtype=True,typ="series")
+predictiveAttributeNotDegree = pd.read_json("../MachineLearning-StudentActivity/DSML/DecisionTree/predictiveNotDegree.txt", orient='records', dtype=True,typ="series")
 
 
 train_set = []

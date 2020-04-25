@@ -15,7 +15,7 @@ import pandas as pd
 Predictive_Value = []
 predictiveTemp = []
 Result = []
-Maturità = json.load(open("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/FileGenerated/ListStudentAug.txt"))
+Maturità = json.load(open("../MachineLearning-StudentActivity/DSML/FileGenerated/ListDatasetAug.txt"))
 Train_size = int((len(Maturità) / 100) * 70)
 Test_size = int((len(Maturità)/100) * 30)
 Train_set = []
@@ -59,8 +59,8 @@ print("slope: ", model.coef_)
 maximum = 0.0
 sw = 0
 minus = 0.0
-School = json.load(open("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/FileGenerated/DictSchool.txt"))
-Name_School = json.load(open("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/FileGenerated/DictCodSchool.txt"))
+School = json.load(open("../MachineLearning-StudentActivity/DSML/FileGenerated/DictSchool.txt"))
+Name_School = json.load(open("../MachineLearning-StudentActivity/DSML/FileGenerated/DictCodSchool.txt"))
 y_pred_pred = []
 for item in Test_set:
     tipo_maturità = item[0]
