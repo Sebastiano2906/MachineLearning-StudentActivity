@@ -1,8 +1,4 @@
-"""
-Implementazione di una RandomForest.
-Sono ancora in fase di seminazione degli alberi. Lasciate che la natura faccia il suo corso, e quando
-cresceranno gli alberelli vi spiegherò.
-"""
+
 
 import numpy as np
 from sklearn.ensemble import RandomForestRegressor
@@ -11,8 +7,8 @@ from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import cross_val_score
 
 
-predictiveAttributeDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/DecisionTree/predictiveDegree.txt", orient='records', dtype=True,typ="series")
-predictiveAttributeNotDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/DecisionTree/predictiveNotDegree.txt", orient='records', dtype=True,typ="series")
+predictiveAttributeDegree = pd.read_json("../MachineLearning-StudentActivity/DSML/DecisionTree/predictiveDegree.txt", orient='records', dtype=True,typ="series")
+predictiveAttributeNotDegree = pd.read_json("../MachineLearning-StudentActivity/DSML/DecisionTree/predictiveNotDegree.txt", orient='records', dtype=True,typ="series")
 
 
 train_set = []
@@ -60,8 +56,8 @@ print("Feature Importance: ", rnd_reg.feature_importances_)
 
 
 print("\n\n\n----------QUI INIZIA LA SEZIONE CON TUTTI GLI ATTRIBUTI---------- \n\n\n")
-predictiveAttributeDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/DecisionTree/predictiveDegree.txt", orient='records', dtype=True,typ="series")
-predictiveAttributeNotDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/DecisionTree/predictiveNotDegree.txt", orient='records', dtype=True,typ="series")
+predictiveAttributeDegree = pd.read_json("../MachineLearning-StudentActivity/DSML/DecisionTree/predictiveDegree.txt", orient='records', dtype=True,typ="series")
+predictiveAttributeNotDegree = pd.read_json("../MachineLearning-StudentActivity/DSML/DecisionTree/predictiveNotDegree.txt", orient='records', dtype=True,typ="series")
 
 
 train_set_tot = []
