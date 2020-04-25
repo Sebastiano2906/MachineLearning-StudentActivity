@@ -35,12 +35,16 @@ svm_reg = LinearSVR(epsilon=1.0, max_iter=10000000)
 train_result = np.array(train_result)
 svm_reg.fit(train_set, train_result.ravel())
 print(svm_reg.score(test_set, test_result))
-newStudent = [[9,92]]
-realValue = [42]
-predicted = svm_reg.predict(newStudent)
+prediction = []
+for item in test_set:
+    items = [[item[0], item[1]]]
+    prediction.append(svm_reg.predict(items))
+pred = np.zeros(len(prediction))
+predi = np.array(prediction)
+for i in range(len(prediction)):
+    pred[i] = predi[i][0]
 
-print("Predicted: ", predicted)
-print("MSE: ", mean_squared_error(realValue, predicted))
+print(("MSE: {}".format(mean_squared_error(pred, test_result))))
 print("Params: ", svm_reg.get_params())
 test_set = np.array(test_set)
 test_result = np.array(test_result)

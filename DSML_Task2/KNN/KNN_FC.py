@@ -11,7 +11,7 @@ import csv
 import json
 
 from sklearn.preprocessing import LabelEncoder
-triennali="C:/Users/clara/PycharmProjects/prog2/DSML_Task2/KNN/ListaStudenti4.csv" #ATTENZIONE AL PATH
+triennali="C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML_Task2/KNN/ListaStudentiModificata_ConseideraDatasetNuovo.csv" #ATTENZIONE AL PATH
 # Assign colum names to the dataset
 names = [ 'TipoMaturità', 'VotoDiploma','CFU1', 'AnniFuoriCorso']
 
@@ -39,7 +39,7 @@ X_test = scaler.transform(X_test)
 
 #Non esiste un valore ideale per K ed è selezionato dopo il test e la valutazione, tuttavia per iniziare, 5 sembra essere il valore più comunemente usato per l'algoritmo KNN.
 from sklearn.neighbors import KNeighborsClassifier
-classifier = KNeighborsClassifier(n_neighbors=8)
+classifier = KNeighborsClassifier(n_neighbors=5)
 arra=np.array([3,72,18])
 arra = arra.reshape(1,-1)
 classifier.fit(X_train, y_train)
@@ -86,3 +86,20 @@ plt.xlabel('K Value')
 plt.ylabel('Mean Error')
 
 plt.show()
+"""
+precision: per tutte le istanze classificate come positive, quale percentuale era corretta?”
+
+recall: è la capacità di un classificatore di trovare tutte le istanze positive.
+Per ogni classe è definito come il rapporto tra i veri positivi e la somma dei veri positivi e dei falsi negativi.
+Detto in altri termini, “per tutte le istanze che erano effettivamente positive, quale percentuale è stata classificata correttamente?”
+
+
+il punteggio f1: Il punteggio F1 è una media armonica ponderata delle due precedenti metriche in modo tale che il 
+punteggio migliore sia 1,0 e il peggiore sia 0,0. 
+Come regola generale, la media ponderata di F1 dovrebbe essere utilizzata per confrontare i modelli di classificatore, 
+non la precisione globale.
+
+Supporto: Il supporto è il numero di occorrenze effettive della classe nel set di dati specificato.
+Il supporto squilibrato nei dati di addestramento può indicare debolezze strutturali nei punteggi riportati
+del classificatore e potrebbe indicare la necessità di campionamento stratificato o ribilanciamento. 
+Il supporto non cambia tra i modelli, ma invece diagnostica il processo di valutazione."""

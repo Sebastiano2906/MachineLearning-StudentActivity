@@ -34,8 +34,6 @@ for i in range(Train_size+1, len(Maturità)):
     Result_Test.append(int(Maturità[i][0][2]))
     Test_set.append(TestTemp)
 
-newStudent = [[9,92]]
-realValue = [42]
 poly_features = PolynomialFeatures(degree=2, include_bias=False)
 Train_set, Result, Test_set, Result_Test = np.array(Train_set), np.array(Result), np.array(Test_set), np.array(Result_Test)
 Result_set_poly = Result.reshape(-1,1)
@@ -46,10 +44,33 @@ model = LinearRegression()
 model.fit(Train_set_poly, Result)
 prediction = model.predict(Test_set_poly)
 r_sq = r2_score(Result_Test, prediction)
-newStudentPoly = poly_features.fit_transform(newStudent)
-predicted = model.predict(newStudentPoly)
-print("Predetto : {}".format(predicted))
-print("errore : {}".format(mean_squared_error(realValue,predicted)))
+prediction = []
+for item in Test_set_poly:
+    items = [[item[0], item[1]]]
+    items = poly_features.fit_transform(items)
+    prediction.append(model.predict(items))
+pred = np.zeros(len(prediction))
+predi = np.array(prediction)
+for i in range(len(prediction)):
+    pred[i] = predi[i][0]
+print(("MSE: {}".format(mean_squared_error(pred, Result_Test))))
+import math
+def metrics(m,X,y):
+    yhat = m.predict(X)
+    SS_Residual = sum((y-yhat)**2)
+    SS_Total = sum((y-np.mean(y))**2)
+    Scarto_totale = sum(abs(yhat-y))
+    Scarto_totale_quadratico = sum((yhat-y)**2)
+    mae = Scarto_totale / len(y)
+    mse = Scarto_totale_quadratico / len(y)
+    rmse = math.sqrt(mse)
+    r_squared = 1 - (float(SS_Residual))/SS_Total
+    adj_r_squared = 1 - (1-r_squared)*(len(y)-1)/(len(y)-2 -1)
+    return r_squared, adj_r_squared, mae, mse, rmse
+
+r_sq, adj_r_squared, meanAbsoluteError, MSE, RMSE = metrics(model, Test_set_poly, Result_Test)
+print("ADJ_R2Score: ", adj_r_squared)
+print("MSE : ", MSE)
 print("Coefficient of determination: ", r_sq)
 print("Intercept: ", model.intercept_)
 print("Slope:", model.coef_)
@@ -101,15 +122,34 @@ for i in range(len(predictiveAttributeNotDegree)):
 
 poly_reg_tot = LinearRegression()
 poly_features = PolynomialFeatures(degree=2, include_bias=False)
-Train_set_poly = poly_features.fit_transform(train_set)
-Train_result_poly = poly_features.fit_transform(train_result)
-Test_set_poly = poly_features.fit_transform(test_set)
-poly_reg_tot.fit(Train_set_poly, Train_result_poly)
-predictionAll = poly_reg_tot.predict(Test_set_poly)
-r_sq = poly_reg_tot.score(Train_set_poly, Train_result_poly)
+
+
+Train_set_poly2 = poly_features.fit_transform(train_set)
+Train_result_poly2 = poly_features.fit_transform(train_result)
+
+Test_set_poly2 = poly_features.fit_transform(test_set)
+Test_result_poly2 = poly_features.fit_transform(test_result)
+
+poly_reg_tot.fit(Train_set_poly2, train_result)
+predictionAll = poly_reg_tot.predict(Test_set_poly2)
+
+r_sq = poly_reg_tot.score(Test_set_poly2, test_result)
 print("-----ALL ATTRIBUTE-----: Coefficient of determination: ", r_sq)
 newStudent = [[633, 1355, 1, 1, 2013, 3, 2013, 92, 54, 9, 0]]
 realValue = [42]
 newStudentPoly = poly_features.fit_transform(newStudent)
-print("Predetto : {}".format(predicted))
-print("errore : {}".format(mean_squared_error(realValue,predicted)))
+r_sq, adj_r_squared, meanAbsoluteError, MSE, RMSE = metrics(poly_reg_tot, Test_set_poly2, test_result)
+print("-----ALL ATTRIBUTE-----: ADJ_R2Score: ", adj_r_squared)
+print("-----ALL ATTRIBUTE-----: MSE : ", MSE)
+
+prediction = []
+for item in Test_set_poly2:
+    items = [[item[0], item[1], item[2], item[3], item[4], item[5], item[6], item[7], item[8], item[9], item[10]]]
+    items = poly_features.fit_transform(items)
+    prediction.append(poly_reg_tot.predict(items))
+pred = np.zeros(len(prediction))
+predi = np.array(prediction)
+for i in range(len(prediction)):
+    pred[i] = predi[i][0]
+
+print(("MSE: {}".format(mean_squared_error(pred, Test_result_poly2))))

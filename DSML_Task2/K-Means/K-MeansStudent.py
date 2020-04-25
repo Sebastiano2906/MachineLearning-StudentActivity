@@ -11,7 +11,7 @@ from sklearn.preprocessing import LabelEncoder
 
 
 
-Maturità = json.load(open("C:/Users/clara/PycharmProjects/prog2/DSML_Task2/K-Means/ListStudent2.txt")) #ATTENZIONE AL PATH
+Maturità = json.load(open("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML_Task2/K-Means/ListStudent2.txt")) #ATTENZIONE AL PATH
 tipo_maturità=[]
 voto_diploma =[]
 cfu_primo =[]

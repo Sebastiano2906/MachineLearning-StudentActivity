@@ -17,6 +17,7 @@ def load_degree_data(degree_path=DEGREE_PATH):
 degree_db = load_degree_data()
 
 laureati = [tuple(row) for row in csv.reader(open('C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/Dataset/DatasetTriennali.csv', 'r'))]
+newData = [tuple(row) for row in csv.reader(open('C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/Dataset/newdata.csv', 'r'))]
 laureatiAug = [tuple(row) for row in csv.reader(open('C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/Dataset/DatasetTriennaliAugmented.csv', 'r'))]
 tipo_mat = json.load(open("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/DecisionTree/Tipo_mat.txt"))
 Maturità = []

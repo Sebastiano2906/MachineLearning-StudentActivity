@@ -34,7 +34,7 @@ for i in range(0, len(Maturità)):
     tipo_maturità = int(Maturità[i][0][0])
     voto_diploma = int(Maturità[i][0][1])
     TrainTemp = [tipo_maturità, voto_diploma]
-    Result.append([int(Maturità[i][0][2]), int(Maturità[i][0][2])])
+    Result.append([int(Maturità[i][0][2])])
     Train_set.append(TrainTemp)
 
 Train_set, Test_set, Result,  Result_Test = train_test_split(Train_set, Result, test_size=0.3)
@@ -44,17 +44,45 @@ model = LinearRegression()
 model.fit(Train_set, Result)
 pred1 = model.predict(Test_set)
 newStudent = [[9,92]]
-realValue = [[42,42]]
+realValue = [42]
 predicted = model.predict(newStudent)
+prediction = []
+for item in Test_set:
+    items = [[item[0], item[1]]]
+    prediction.append(model.predict(items))
+pred = np.zeros(len(prediction))
+predi = np.array(prediction)
+for i in range(len(prediction)):
+    pred[i] = predi[i][0][0]
 print("Predetto : {}".format(predicted))
 print("errore : {}".format(mean_squared_error(realValue,predicted)))
+print(("MSE: {}".format(mean_squared_error(pred, Result_Test))))
 r_sq = r2_score(Result_Test, pred1)
 print("Coefficient of determination: ", r_sq)
 print("intercept: ", model.intercept_)
 print("slope: ", model.coef_)
+
+import math
+def metrics(m,X,y):
+    yhat = m.predict(X)
+    SS_Residual = sum((y-yhat)**2)
+    SS_Total = sum((y-np.mean(y))**2)
+    Scarto_totale = sum(abs(yhat-y))
+    Scarto_totale_quadratico = sum((yhat-y)**2)
+    mae = Scarto_totale / len(y)
+    mse = Scarto_totale_quadratico / len(y)
+    rmse = math.sqrt(mse)
+    r_squared = 1 - (float(SS_Residual))/SS_Total
+    adj_r_squared = 1 - (1-r_squared)*(len(y)-1)/(len(y)-2 -1)
+    return r_squared, adj_r_squared, mae, mse, rmse
+
+r_sq, adj_r_squared, meanAbsoluteError, MSE, RMSE = metrics(model, Test_set, Result_Test)
+print("ADJ_R2Score: ", adj_r_squared)
+print("MSE : ",MSE)
+"""
 plt.scatter(Test_set, Result_Test, color='black')
 plt.plot(Test_set, pred1, color='blue', linewidth=3)
-plt.show()
+plt.show()"""
 """
 def plot_learning_curves(model, X, y):
     X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2)
@@ -101,19 +129,13 @@ for i in range(len(predictiveAttributeDegree)):
                           predictiveAttributeDegree[i][7], predictiveAttributeDegree[i][8], predictiveAttributeDegree[i][9],
                           predictiveAttributeDegree[i][10], predictiveAttributeDegree[i][11], predictiveAttributeDegree[i][12],
                           predictiveAttributeDegree[i][13], predictiveAttributeDegree[i][17]])
-        train_result.append([predictiveAttributeDegree[i][2],predictiveAttributeDegree[i][2],predictiveAttributeDegree[i][2],
-                             predictiveAttributeDegree[i][2],predictiveAttributeDegree[i][2],predictiveAttributeDegree[i][2],
-                             predictiveAttributeDegree[i][2],predictiveAttributeDegree[i][2],predictiveAttributeDegree[i][2],
-                             predictiveAttributeDegree[i][2],predictiveAttributeDegree[i][2]])
+        train_result.append([predictiveAttributeDegree[i][2]])
     else:
         test_set.append([predictiveAttributeDegree[i][0], predictiveAttributeDegree[i][1], predictiveAttributeDegree[i][6],
                           predictiveAttributeDegree[i][7], predictiveAttributeDegree[i][8], predictiveAttributeDegree[i][9],
                           predictiveAttributeDegree[i][10], predictiveAttributeDegree[i][11], predictiveAttributeDegree[i][12],
                           predictiveAttributeDegree[i][13], predictiveAttributeDegree[i][17]])
-        test_result.append([predictiveAttributeDegree[i][2],predictiveAttributeDegree[i][2],predictiveAttributeDegree[i][2],
-                             predictiveAttributeDegree[i][2],predictiveAttributeDegree[i][2],predictiveAttributeDegree[i][2],
-                             predictiveAttributeDegree[i][2],predictiveAttributeDegree[i][2],predictiveAttributeDegree[i][2],
-                             predictiveAttributeDegree[i][2],predictiveAttributeDegree[i][2]])
+        test_result.append([predictiveAttributeDegree[i][2]])
 train_percent = (len(predictiveAttributeNotDegree)/100)*80
 count = 0
 for i in range(len(predictiveAttributeNotDegree)):
@@ -123,22 +145,16 @@ for i in range(len(predictiveAttributeNotDegree)):
                           predictiveAttributeNotDegree[i][7], predictiveAttributeNotDegree[i][8], predictiveAttributeNotDegree[i][9],
                           predictiveAttributeNotDegree[i][10], predictiveAttributeNotDegree[i][11], predictiveAttributeNotDegree[i][12],
                           predictiveAttributeNotDegree[i][13], predictiveAttributeNotDegree[i][17]])
-        train_result.append([predictiveAttributeNotDegree[i][2],predictiveAttributeNotDegree[i][2],predictiveAttributeNotDegree[i][2],
-                             predictiveAttributeNotDegree[i][2],predictiveAttributeNotDegree[i][2],predictiveAttributeNotDegree[i][2],
-                             predictiveAttributeNotDegree[i][2],predictiveAttributeNotDegree[i][2],predictiveAttributeNotDegree[i][2],
-                             predictiveAttributeNotDegree[i][2],predictiveAttributeNotDegree[i][2]])
+        train_result.append([predictiveAttributeNotDegree[i][2]])
     else:
         test_set.append([predictiveAttributeNotDegree[i][0], predictiveAttributeNotDegree[i][1], predictiveAttributeNotDegree[i][6],
                           predictiveAttributeNotDegree[i][7], predictiveAttributeNotDegree[i][8], predictiveAttributeNotDegree[i][9],
                           predictiveAttributeNotDegree[i][10], predictiveAttributeNotDegree[i][11], predictiveAttributeNotDegree[i][12],
                           predictiveAttributeNotDegree[i][13], predictiveAttributeNotDegree[i][17]])
-        test_result.append([predictiveAttributeNotDegree[i][2],predictiveAttributeNotDegree[i][2],predictiveAttributeNotDegree[i][2],
-                             predictiveAttributeNotDegree[i][2],predictiveAttributeNotDegree[i][2],predictiveAttributeNotDegree[i][2],
-                             predictiveAttributeNotDegree[i][2],predictiveAttributeNotDegree[i][2],predictiveAttributeNotDegree[i][2],
-                             predictiveAttributeNotDegree[i][2],predictiveAttributeNotDegree[i][2]])
+        test_result.append([predictiveAttributeNotDegree[i][2]])
 
 newStudent = [[633, 1355, 1, 1, 2013, 3, 2013, 92, 54, 9, 0]]
-realValue = [[42,42,42,42,42,42,42,42,42,42,42]]
+realValue = [42]
 lin_reg_tot = LinearRegression()
 lin_reg_tot.fit(train_set, train_result)
 pred = lin_reg_tot.predict(test_set)
@@ -146,13 +162,24 @@ r_sq = r2_score(test_result, pred)
 predicted = lin_reg_tot.predict(newStudent)
 print("Predetto : {}".format(predicted))
 print("errore : {}".format(mean_squared_error(realValue,predicted)))
-
+prediction = []
+for item in test_set:
+    items = [[item[0], item[1], item[2], item[3], item[4], item[5], item[6], item[7], item[8], item[9], item[10]]]
+    prediction.append(lin_reg_tot.predict(items))
+pred = np.zeros(len(prediction))
+predi = np.array(prediction)
+for i in range(len(prediction)):
+    pred[i] = predi[i][0][0]
 print("-----ALL ATTRIBUTE-----: Coefficient of determination: ", r_sq)
 print("-----ALL ATTRIBUTE-----: slope: ", lin_reg_tot.coef_)
-plt.scatter(test_set, test_result, color='black')
+r_sq, adj_r_squared, meanAbsoluteError, MSE, RMSE = metrics(lin_reg_tot, test_set, test_result)
+print("-----ALL ATTRIBUTE-----: ADJ_R2Score: ", adj_r_squared)
+print("-----ALL ATTRIBUTE-----: MSE : ",MSE)
+print(("MSE: {}".format(mean_squared_error(pred, test_result))))
+"""plt.scatter(test_set, test_result, color='black')
 plt.plot(test_set, pred, color='blue', linewidth=3)
 plt.show()
-"""
+
 theta_0 = lin_reg_tot.intercept_
 theta_1_500 = lin_reg_tot.coef_
 theta_1_500 = np.array(theta_1_500)

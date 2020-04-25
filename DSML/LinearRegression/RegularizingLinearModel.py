@@ -50,6 +50,20 @@ r_sq = rid_reg.score(Train_set, Result)
 newStudent = [[9,92]]
 realValue = [42]
 
+import math
+def metrics(m,X,y):
+    yhat = m.predict(X)
+    SS_Residual = sum((y-yhat)**2)
+    SS_Total = sum((y-np.mean(y))**2)
+    Scarto_totale = sum(abs(yhat-y))
+    Scarto_totale_quadratico = sum((yhat-y)**2)
+    mae = Scarto_totale / len(y)
+    mse = Scarto_totale_quadratico / len(y)
+    rmse = math.sqrt(mse)
+    r_squared = 1 - (float(SS_Residual))/SS_Total
+    adj_r_squared = 1 - (1-r_squared)*(len(y)-1)/(len(y)-2 -1)
+    return r_squared, adj_r_squared, mae, mse, rmse
+
 
 
 
@@ -58,20 +72,34 @@ r_sq = elastic_net.score(Test_set, Result_Test)
 print("Coefficient of determination: ", r_sq)
 print("intercept: ", elastic_net.intercept_)
 print("slope: ", elastic_net.coef_)
-predicted = elastic_net.predict(newStudent)
-print("Predetto : {}".format(predicted))
-print("errore : {}".format(mean_squared_error(realValue,predicted)))
-
+prediction = []
+for item in Test_set:
+    items = [[item[0], item[1]]]
+    prediction.append(elastic_net.predict(items))
+pred = np.zeros(len(prediction))
+predi = np.array(prediction)
+for i in range(len(prediction)):
+    pred[i] = predi[i][0]
+r_sq, adj_r_squared, meanAbsoluteError, MSE, RMSE = metrics(elastic_net, Test_set, Result_Test)
+print("ADJ_R2Score: ", adj_r_squared)
+print(("MSE: {}".format(mean_squared_error(pred, Result_Test))))
 
 print("--------RIDGE REGERESSION-------")
 r_sq = rid_reg.score(Test_set, Result_Test)
 print("Coefficient of determination: ", r_sq)
 print("intercept: ", rid_reg.intercept_)
 print("slope: ", rid_reg.coef_)
-predicted = rid_reg.predict(newStudent)
-print("Predetto : {}".format(predicted))
-print("errore : {}".format(mean_squared_error(realValue,predicted)))
-
+prediction = []
+for item in Test_set:
+    items = [[item[0], item[1]]]
+    prediction.append(rid_reg.predict(items))
+pred = np.zeros(len(prediction))
+predi = np.array(prediction)
+for i in range(len(prediction)):
+    pred[i] = predi[i][0]
+r_sq, adj_r_squared, meanAbsoluteError, MSE, RMSE = metrics(rid_reg, Test_set, Result_Test)
+print("ADJ_R2Score: ", adj_r_squared)
+print(("MSE: {}".format(mean_squared_error(pred, Result_Test))))
 
 
 print("--------SGD REGRESSOR-------")
@@ -79,19 +107,35 @@ r_sq = sgd_reg.score(Test_set,Result_Test)
 print("Coefficient of determination: ", r_sq)
 print("intercept: ", sgd_reg.intercept_)
 print("slope: ", sgd_reg.coef_)
-predicted = sgd_reg.predict(newStudent)
-print("Predetto : {}".format(predicted))
-print("errore : {}".format(mean_squared_error(realValue,predicted)))
-
+prediction = []
+for item in Test_set:
+    items = [[item[0], item[1]]]
+    prediction.append(sgd_reg.predict(items))
+pred = np.zeros(len(prediction))
+predi = np.array(prediction)
+for i in range(len(prediction)):
+    pred[i] = predi[i][0]
+r_sq, adj_r_squared, meanAbsoluteError, MSE, RMSE = metrics(sgd_reg, Test_set, Result_Test)
+print("ADJ_R2Score: ", adj_r_squared)
+print(("MSE: {}".format(mean_squared_error(pred, Result_Test))))
 
 print("--------Logistic Regression-------")
 r_sq = log_reg.score(Test_set, Result_Test)
 print("Coefficient of determination: ", r_sq)
 print("intercept: ", log_reg.intercept_)
 print("slope: ", log_reg.coef_)
-predicted = log_reg.predict(newStudent)
-print("Predetto : {}".format(predicted))
-print("errore : {}".format(mean_squared_error(realValue,predicted)))
+prediction = []
+for item in Test_set:
+    items = [[item[0], item[1]]]
+    prediction.append(log_reg.predict(items))
+pred = np.zeros(len(prediction))
+predi = np.array(prediction)
+for i in range(len(prediction)):
+    pred[i] = predi[i][0]
+r_sq, adj_r_squared, meanAbsoluteError, MSE, RMSE = metrics(log_reg, Test_set, Result_Test)
+print("ADJ_R2Score: ", adj_r_squared)
+print(("MSE: {}".format(mean_squared_error(pred, Result_Test))))
+
 
 #   QUI COMINCIA LA PROVA CON TUTTI GLI ATTRIBUTI
 
@@ -149,26 +193,40 @@ log_reg.fit(train_set, train_result)
 newStudent = [[633, 1355, 1, 1, 2013, 3, 2013, 92, 54, 9, 0]]
 realValue = [42]
 print("-----------ALL ATTRIBUTE-----------")
-
 print("--------ELASTIC NET-------")
-r_sq = elastic_net.score(test_set,test_result)
+r_sq = elastic_net.score(test_set, test_result)
 print("Coefficient of determination: ", r_sq)
 print("intercept: ", elastic_net.intercept_)
 print("slope: ", elastic_net.coef_)
-predicted = elastic_net.predict(newStudent)
-print("Predetto : {}".format(predicted))
-print("errore : {}".format(mean_squared_error(realValue,predicted)))
-
+prediction = []
+for item in test_set:
+    items = [[item[0], item[1], item[2], item[3], item[4], item[5], item[6], item[7], item[8], item[9], item[10]]]
+    prediction.append(elastic_net.predict(items))
+pred = np.zeros(len(prediction))
+predi = np.array(prediction)
+for i in range(len(prediction)):
+    pred[i] = predi[i][0]
+print(("MSE: {}".format(mean_squared_error(pred, test_result))))
+# r_sq, adj_r_squared, meanAbsoluteError, MSE, RMSE = metrics(elastic_net, test_set, test_result)
+# print("ADJ_R2Score: ", adj_r_squared)
+#print("MSE : ", MSE)
 
 print("--------RIDGE REGERESSION-------")
 r_sq = rid_reg.score(test_set, test_result)
 print("Coefficient of determination: ", r_sq)
 print("intercept: ", rid_reg.intercept_)
 print("slope: ", rid_reg.coef_)
-predicted = rid_reg.predict(newStudent)
-print("Predetto : {}".format(predicted))
-print("errore : {}".format(mean_squared_error(realValue,predicted)))
-
+prediction = []
+for item in test_set:
+    items = [[item[0], item[1], item[2], item[3], item[4], item[5], item[6], item[7], item[8], item[9], item[10]]]
+    prediction.append(elastic_net.predict(items))
+pred = np.zeros(len(prediction))
+predi = np.array(prediction)
+for i in range(len(prediction)):
+    pred[i] = predi[i][0]
+print(("MSE: {}".format(mean_squared_error(pred, test_result))))
+# r_sq, adj_r_squared, meanAbsoluteError, MSE, RMSE = metrics(rid_reg, test_set, test_result)
+# print("ADJ_R2Score: ", adj_r_squared)
 
 
 print("--------SGD REGRESSOR-------")
@@ -176,16 +234,33 @@ r_sq = sgd_reg.score(test_set, test_result)
 print("Coefficient of determination: ", r_sq)
 print("intercept: ", sgd_reg.intercept_)
 print("slope: ", sgd_reg.coef_)
-predicted = sgd_reg.predict(newStudent)
-print("Predetto : {}".format(predicted))
-print("errore : {}".format(mean_squared_error(realValue,predicted)))
-
+prediction = []
+for item in test_set:
+    items = [[item[0], item[1], item[2], item[3], item[4], item[5], item[6], item[7], item[8], item[9], item[10]]]
+    prediction.append(elastic_net.predict(items))
+pred = np.zeros(len(prediction))
+predi = np.array(prediction)
+for i in range(len(prediction)):
+    pred[i] = predi[i][0]
+print(("MSE: {}".format(mean_squared_error(pred, test_result))))
+# r_sq, adj_r_squared, meanAbsoluteError, MSE, RMSE = metrics(sgd_reg, test_set, test_result)
+# print("ADJ_R2Score: ", adj_r_squared)
+# #print("MSE : ", MSE)
 
 print("--------Logistic Regression-------")
 r_sq = log_reg.score(test_set, test_result)
 print("Coefficient of determination: ", r_sq)
 print("intercept: ", log_reg.intercept_)
 print("slope: ", log_reg.coef_)
-predicted = log_reg.predict(newStudent)
-print("Predetto : {}".format(predicted))
-print("errore : {}".format(mean_squared_error(realValue,predicted)))
+prediction = []
+for item in test_set:
+    items = [[item[0], item[1], item[2], item[3], item[4], item[5], item[6], item[7], item[8], item[9], item[10]]]
+    prediction.append(elastic_net.predict(items))
+pred = np.zeros(len(prediction))
+predi = np.array(prediction)
+for i in range(len(prediction)):
+    pred[i] = predi[i][0]
+print(("MSE: {}".format(mean_squared_error(pred, test_result))))
+# r_sq, adj_r_squared, meanAbsoluteError, MSE, RMSE = metrics(log_reg, test_set, test_result)
+# print("ADJ_R2Score: ", adj_r_squared)
+# #print("MSE : ", MSE)

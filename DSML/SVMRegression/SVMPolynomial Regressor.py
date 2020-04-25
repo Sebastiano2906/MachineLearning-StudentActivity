@@ -36,11 +36,15 @@ train_result = np.array(train_result)
 svm_reg.fit(train_set, train_result.ravel())
 
 print(svm_reg.score(test_set, test_result))
-newStudent = [[2933, 2928, 0, 0, 30, 1, 1, 2018, 1, 2018, 100, 200, 1, 0, 0, 0, 0, 1, 2, 0]]
-real_value = [30]
-predicted = svm_reg.predict(newStudent)
+prediction = []
+for item in test_set:
+    items = [[item[0], item[1]]]
+    prediction.append(svm_reg.predict(items))
+pred = np.zeros(len(prediction))
+predi = np.array(prediction)
+for i in range(len(prediction)):
+    pred[i] = predi[i][0]
 
-print("Predicted: ", predicted)
-print("MSE: ", mean_squared_error(real_value, svm_reg.predict(newStudent)))
+print(("MSE: {}".format(mean_squared_error(pred, test_result))))
 print("Params: ", svm_reg.get_params())
 

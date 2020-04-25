@@ -45,13 +45,19 @@ rnd_reg = RandomForestRegressor(n_estimators=500, max_leaf_nodes=10, n_jobs=-1, 
 #print(cross_val_score(rnd_reg, train_set[1:], train_result[1:], cv=10))
 rnd_reg.fit(train_set, train_result.ravel())
 print(rnd_reg.score(test_set, test_result))
-newStudent = [[9,92]]
-realValue = [42]
-predicted = rnd_reg.predict(newStudent)
-print("Predicted: ", predicted)
-print("MSE: ", mean_squared_error(realValue, predicted))
+prediction = []
+for item in test_set:
+    items = [[item[0], item[1]]]
+    prediction.append(rnd_reg.predict(items))
+pred = np.zeros(len(prediction))
+predi = np.array(prediction)
+for i in range(len(prediction)):
+    pred[i] = predi[i][0]
+print(("MSE: {}".format(mean_squared_error(pred, test_result))))
 print("Params: ", rnd_reg.get_params())
 print("Feature Importance: ", rnd_reg.feature_importances_)
+
+
 
 print("\n\n\n----------QUI INIZIA LA SEZIONE CON TUTTI GLI ATTRIBUTI---------- \n\n\n")
 predictiveAttributeDegree = pd.read_json("C:/Users/sebas/PycharmProjects/MachineLearning-Local/DSML/DecisionTree/predictiveDegree.txt", orient='records', dtype=True,typ="series")
@@ -100,10 +106,14 @@ rnd_reg_AllAttribute = RandomForestRegressor(n_estimators=500, max_leaf_nodes=10
 rnd_reg_AllAttribute.fit(train_set_tot, train_result_tot.ravel())
 
 print(rnd_reg_AllAttribute.score(test_set_tot, test_result_tot.ravel()))
-newStudent = [[633, 1355, 1, 1, 2013, 3, 2013, 92, 54, 9, 0]]
-realValue = [42]
-predicted = rnd_reg_AllAttribute.predict(newStudent)
-print("---ALL ATTRIBUTE----: Predicted: ", predicted)
-print("---ALL ATTRIBUTE----: MSE: ", mean_squared_error(realValue, predicted))
+prediction = []
+for item in test_set_tot:
+    items = [[item[0], item[1], item[2], item[3], item[4], item[5], item[6], item[7], item[8], item[9], item[10]]]
+    prediction.append(rnd_reg_AllAttribute.predict(items))
+pred = np.zeros(len(prediction))
+predi = np.array(prediction)
+for i in range(len(prediction)):
+    pred[i] = predi[i][0]
+print(("MSE: {}".format(mean_squared_error(pred, test_result_tot))))
 print("---ALL ATTRIBUTE----: Params: ", rnd_reg_AllAttribute.get_params())
 print("---ALL ATTRIBUTE----: Feature Importance: ", rnd_reg_AllAttribute.feature_importances_)

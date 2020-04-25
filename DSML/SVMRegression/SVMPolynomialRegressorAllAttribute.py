@@ -48,11 +48,13 @@ train_result_tot = np.array(train_result_tot)
 svm_reg_tot.fit(train_set_tot, train_result_tot.ravel())
 
 print("----ALL ATTRIBUTE: score: ", svm_reg_tot.score(test_set_tot, test_result_tot))
-#              0. matr 1.cf  6.tipoCds  7.coorte  9.annodiploma 10.votodip 11.codschool 12.tipoMat  17.mot_sta 18.sta
-newStudent = [[2933, 2928, 1, 2015, 2015, 100, 200, 9, 3, 10]]
-real_value = [30]
-predicted = svm_reg_tot.predict(newStudent)
-
-print("----ALL ATTRIBUTE: Predicted: ", predicted)
-print("----ALL ATTRIBUTE: MSE: ", mean_squared_error(real_value, svm_reg_tot.predict(newStudent)))
+prediction = []
+for item in test_set_tot:
+    items = [[item[0], item[1], item[2], item[3], item[4], item[5], item[6], item[7], item[8], item[9], item[10]]]
+    prediction.append(svm_reg_tot.predict(items))
+pred = np.zeros(len(prediction))
+predi = np.array(prediction)
+for i in range(len(prediction)):
+    pred[i] = predi[i][0]
+print(("MSE: {}".format(mean_squared_error(pred, test_result_tot))))
 print("----ALL ATTRIBUTE: Params: ", svm_reg_tot.get_params())
