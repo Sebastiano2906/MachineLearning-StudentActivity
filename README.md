@@ -6,7 +6,7 @@
 2. Analizzare in che modo il background liceale e il numero di esami del primo anno(come sopra), potessero influire sul             completametno in corso o meno del percorso di studi.
 
 
-##### I risultati sono stati racchiusi in una [tesina](), in cui spiegheremo qualche piccolissimo richiamo alle tecniche utilizzate, per rendere comprensibile il tutto anche a chi non è pratico del settore.
+##### I risultati sono stati racchiusi in una tesina([a questo link](https://github.com/Sebastiano2906/MachineLearning-StudentActivity/blob/master/ANALISI_PERFORMANCE_UNIVERSITARIE_CARUSO_MONACO_X_2.pptx)), in cui spiegheremo qualche piccolissimo richiamo alle tecniche utilizzate, per rendere comprensibile il tutto anche a chi non è pratico del settore.
 
 
 ###### Project Contributors 
