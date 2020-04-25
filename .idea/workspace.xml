@@ -1,90 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36a36402-c4a2-4936-a7c6-b9b91af22e52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AnalisiDati/Dataset/DatasetStudenti.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnalisiDati/readData.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML/ClusteringSchool/ClusterPerSchool.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task2/Clara/Analisys.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task2/FileGenerated/TotalStudent.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task2/K-Means/DatasetTriannaliNuovo.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task2/K-Means/DatasetTriennaliNuovo.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task2/K-Means/K-Means_MotivoStatoStudente.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task2/K-Means/ListaStudentCluster.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task2/K-Means/ListaStudentClusterStatoStudenti.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task2/K-Means/MLProjectNuovo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/Dataset/DatasetMagistrali.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/Dataset/DatasetStudenti.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/Dataset/DatasetTriennali-dot.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/Dataset/DatasetTriennali.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/Dataset/DatasetTriennaliAugmented.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/Dataset/ListDataset.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/Dataset/Tipo_mat.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/Dataset/TotalStudent.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/CDS.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/Cod_school.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/DecisionTree.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/DecisionTreeAllAttribute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/DecisionTreeRegressor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/Mot_sta_stud.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/Source.gv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/Tipo_CDS.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/Tipo_mat.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/WriteListDecisionTree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/cf.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/filenuovi/CDS.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/filenuovi/Cod_school.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/filenuovi/DecisionTreeRegressor2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/filenuovi/Mot_sta_stud.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/filenuovi/Tipo_CDS.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/filenuovi/cf.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/filenuovi/matr.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/filenuovi/predictiveDegree.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/filenuovi/predictiveNotDegree.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/filenuovi/sta_stud.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/matr.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/predictiveDegree.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/predictiveNotDegree.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/DecisionTree/sta_stud.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/K-Means/DatasetTriennaliNuovo.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/K-Means/K-Means_PrimoTask.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/K-Means/ListStudent3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/K-Means/ListaStudentClasseCFU.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/K-Means/WriteListStudent3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/SVMRegression/SVMPolynomial Regressor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/SVMRegression/SVMPolynomialRegressorAllAttribute.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/SVMRegression/SVMRegressor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/SVMRegression/SVMRegressorAllAttribute" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/Utility/AprioriTriennali.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/Utility/ClassiMaturità.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/Utility/DataAugmentation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/Utility/MLProject.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/Utility/OutputApriori.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/Utility/WritierList.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSML_Task3/WorkInProgress/RandomForest.py" afterDir="false" />
+    <list default="true" id="36a36402-c4a2-4936-a7c6-b9b91af22e52" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;DSML_Task2/K-Means/K-Means_MotivoStatoStudente.py&#10;#&#9;DSML_Task2/K-Means/ListaStudentClusterStatoStudenti.csv&#10;#&#9;DSML_Task2/KNN/WriteListStudent3.py">
       <change beforePath="$PROJECT_DIR$/.idea/MachineLearning-Local.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MachineLearning-Local.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSML/DataBoosting/AdaBoosting.py" beforeDir="false" afterPath="$PROJECT_DIR$/DSML/DataBoosting/AdaBoosting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSML/DataBoosting/GradientBoosting.py" beforeDir="false" afterPath="$PROJECT_DIR$/DSML/DataBoosting/GradientBoosting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSML/DecisionTree/DecisionTreeAllAttribute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DSML/DecisionTree/DecisionTreeAllAttribute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSML/DecisionTree/DecisionTreeRegressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/DSML/DecisionTree/DecisionTreeRegressor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSML/LinearRegression/LinearRegressionTriennali.py" beforeDir="false" afterPath="$PROJECT_DIR$/DSML/LinearRegression/LinearRegressionTriennali.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSML/LinearRegression/RegularizingLinearModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/DSML/LinearRegression/RegularizingLinearModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSML/PolynomialRegression/PolynomialRegressionTriennali.py" beforeDir="false" afterPath="$PROJECT_DIR$/DSML/PolynomialRegression/PolynomialRegressionTriennali.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSML/SVMRegression/SVMPolynomial Regressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/DSML/SVMRegression/SVMPolynomial Regressor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSML/SVMRegression/SVMPolynomialRegressorAllAttribute.py" beforeDir="false" afterPath="$PROJECT_DIR$/DSML/SVMRegression/SVMPolynomialRegressorAllAttribute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSML/SVMRegression/SVMRegressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/DSML/SVMRegression/SVMRegressor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSML/SVMRegression/SVMRegressorAllAttribute" beforeDir="false" afterPath="$PROJECT_DIR$/DSML/SVMRegression/SVMRegressorAllAttribute" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSML/WorkInProgress/RandomForest.py" beforeDir="false" afterPath="$PROJECT_DIR$/DSML/WorkInProgress/RandomForest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSML_Task2/K-Means/K-MeansStudent.py" beforeDir="false" afterPath="$PROJECT_DIR$/DSML_Task2/K-Means/K-MeansStudent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSML_Task2/KNN/KNN_FC.py" beforeDir="false" afterPath="$PROJECT_DIR$/DSML_Task2/KNN/KNN_FC.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSML_Task2/KNN/ListaStudenti4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/DSML_Task2/KNN/ListaStudenti4.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSML_Task2/KNN/WriteListStudent3.py" beforeDir="false" afterPath="$PROJECT_DIR$/DSML_Task2/KNN/WriteListStudent3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSML_Task2/Utility/MLProject.py" beforeDir="false" afterPath="$PROJECT_DIR$/DSML_Task2/Utility/MLProject.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv2/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv2/pip-selfcheck.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/Activate.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/activate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/activate.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/apyori-run-script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/apyori-run.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/deactivate.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/easy_install-3.7-script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/easy_install-3.7.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/easy_install-script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/easy_install.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/f2py.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/iptest.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/iptest3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/ipython.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/ipython3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/pip-script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/pip.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/pip3-script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/pip3.7-script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/pip3.7.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/pip3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/pygmentize.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/python.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/Scripts/pythonw.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/pip-selfcheck.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/pyvenv.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv2/share/man/man1/ipython.1.gz" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,77 +40,6 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="MachineLearning-Local" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DSML/WorkInProgress/RandomForest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="104" column="32" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
-              <folding>
-                <element signature="e#188#206#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DSML/DecisionTree/predictiveDegree.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13962" selection-start-column="13962" selection-end-column="13962" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DSML/PolynomialRegression/PolynomialRegressionTriennali.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="110" selection-start-line="110" selection-end-line="111" selection-end-column="16" />
-              <folding>
-                <element signature="e#464#516#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DSML/SVMRegression/SVMRegressor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="42" column="54" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DSML/DecisionTree/DecisionTreeRegressor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="120" selection-start-line="120" selection-end-line="124" selection-end-column="78" />
-              <folding>
-                <element signature="e#0#1722#1" />
-                <element signature="e#1724#1743#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DSML/FileGenerated/ListStudent.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="35934" lean-forward="true" selection-start-column="35934" selection-end-column="35934" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -193,153 +70,34 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/DSML/temp" />
-        <option value="$PROJECT_DIR$/DSML/WritierDict.py" />
-        <option value="$PROJECT_DIR$/PolynomialRegressionTriennali.py" />
-        <option value="$PROJECT_DIR$/DSML/RidgeRegressionTriennali.py" />
-        <option value="$PROJECT_DIR$/DSML/DictSchool.txt" />
-        <option value="$PROJECT_DIR$/DSML/AprioriTriennali.py" />
-        <option value="$PROJECT_DIR$/DSML/ClassiMaturità.py" />
-        <option value="$PROJECT_DIR$/DSML/DataAugmentation.py" />
-        <option value="$PROJECT_DIR$/DSML/DecisionTreeRegressor.py" />
-        <option value="$PROJECT_DIR$/DSML/LinearRegressionAugmented.py" />
-        <option value="$PROJECT_DIR$/DSML/LinearRegressionTriennali.py" />
-        <option value="$PROJECT_DIR$/DSML/MLProject.py" />
-        <option value="$PROJECT_DIR$/DSML/PolynomialRegressionTriennali.py" />
-        <option value="$PROJECT_DIR$/DSML/RandomForest.py" />
-        <option value="$PROJECT_DIR$/DSML/RegularizingLinearModel.py" />
-        <option value="$PROJECT_DIR$/DSML/WritierList.py" />
-        <option value="$PROJECT_DIR$/DSML/LinearRegression/LinearRegressionAugmented.py" />
-        <option value="$PROJECT_DIR$/DSML/Utility/AprioriTriennali.py" />
-        <option value="$PROJECT_DIR$/DSML/WorkInProgress/RandomForestProva.py" />
-        <option value="$PROJECT_DIR$/DSML_Task2/LinearRegression/LinearRegressionTriennali.py" />
-        <option value="$PROJECT_DIR$/DSML_Task2/LinearRegression/Lin_Reg_2.py" />
-        <option value="$PROJECT_DIR$/DSML/LinearRegression/LinRegProva.py" />
-        <option value="$PROJECT_DIR$/DSML_Task2/LinearRegression/LinearRegressionNew.py" />
-        <option value="$PROJECT_DIR$/DSML_Task2/K-Means/K-MeansStudent.py" />
-        <option value="$PROJECT_DIR$/DSML/DecisionTree/WriteListDecisionTree.py" />
-        <option value="$PROJECT_DIR$/DSML/Utility/MLProject.py" />
-        <option value="$PROJECT_DIR$/DSML/Utility/WritierList.py" />
-        <option value="$PROJECT_DIR$/DSML/ClusteringSchool/ClusterPerSchool.py" />
-        <option value="$PROJECT_DIR$/DSML_Task2/K-Means/K-Means_MotivoStatoStudente.py" />
-        <option value="$PROJECT_DIR$/DSML/Plotting.py" />
-        <option value="$PROJECT_DIR$/DSML/SVMRegression/SVMPolynomial Regressor.py" />
-        <option value="$PROJECT_DIR$/DSML/SVMRegression/SVMPolynomialRegressorAllAttribute.py" />
-        <option value="$PROJECT_DIR$/DSML/DataBoosting/AdaBoosting.py" />
-        <option value="$PROJECT_DIR$/DSML/DataBoosting/GradientBoosting.py" />
-        <option value="$PROJECT_DIR$/DSML/LinearRegression/LinearRegressionTriennali.py" />
-        <option value="$PROJECT_DIR$/DSML/PolynomialRegression/PolynomialRegressionTriennali.py" />
-        <option value="$PROJECT_DIR$/DSML/SVMRegression/SVMRegressor.py" />
-        <option value="$PROJECT_DIR$/DSML/SVMRegression/SVMRegressorAllAttribute" />
-        <option value="$PROJECT_DIR$/DSML/LinearRegression/RegularizingLinearModel.py" />
-        <option value="$PROJECT_DIR$/DSML/DecisionTree/DecisionTreeRegressor.py" />
-        <option value="$PROJECT_DIR$/DSML/WorkInProgress/RandomForest.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MachineLearning-Local" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MachineLearning-Local" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MachineLearning-Local" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MachineLearning-Local" type="462c0819:PsiDirectoryNode" />
-              <item name="DSML" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MachineLearning-Local" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MachineLearning-Local" type="462c0819:PsiDirectoryNode" />
-              <item name="DSML" type="462c0819:PsiDirectoryNode" />
-              <item name="WorkInProgress" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MachineLearning-Local" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MachineLearning-Local" type="462c0819:PsiDirectoryNode" />
-              <item name="DSML_Task2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MachineLearning-Local" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MachineLearning-Local" type="462c0819:PsiDirectoryNode" />
-              <item name="DSML_Task2" type="462c0819:PsiDirectoryNode" />
-              <item name="FileGenerated" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MachineLearning-Local" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MachineLearning-Local" type="462c0819:PsiDirectoryNode" />
-              <item name="DSML_Task2" type="462c0819:PsiDirectoryNode" />
-              <item name="K-Means" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MachineLearning-Local" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MachineLearning-Local" type="462c0819:PsiDirectoryNode" />
-              <item name="DSML_Task2" type="462c0819:PsiDirectoryNode" />
-              <item name="KNN" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MachineLearning-Local" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MachineLearning-Local" type="462c0819:PsiDirectoryNode" />
-              <item name="DSML_Task3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MachineLearning-Local" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MachineLearning-Local" type="462c0819:PsiDirectoryNode" />
-              <item name="DSML_Task3" type="462c0819:PsiDirectoryNode" />
-              <item name="K-Means" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectId" id="1acF7Bh8y4bnvh7wumkHLktBXSy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sebas\PycharmProjects\MachineLearning-Local\DSML\Dataset" />
       <recent name="C:\Users\sebas\PycharmProjects\MachineLearning-Local\DSML\WorkInProgress" />
       <recent name="C:\Users\sebas\PycharmProjects\MachineLearning-Local\DSML\DecisionTree" />
       <recent name="C:\Users\sebas\PycharmProjects\MachineLearning-Local\DSML\FileGenerated" />
       <recent name="C:\Users\sebas\PycharmProjects\MachineLearning-Local\DSML\Utility" />
-      <recent name="C:\Users\sebas\PycharmProjects\MachineLearning-Local\DSML\Dataset" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sebas\PycharmProjects\MachineLearning-Local\DSML" />
+      <recent name="C:\Users\sebas\PycharmProjects\MachineLearning-Local\DSML_Task2\Dataset" />
+      <recent name="C:\Users\sebas\PycharmProjects\MachineLearning-Local\DSML_Task2\FileGenerated" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.RandomForest">
-    <configuration name="DecisionTreeRegressor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.PolynomialRegressionTriennali">
+    <configuration name="KNN_FC" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MachineLearning-Local" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -347,11 +105,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DSML/DecisionTree" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DSML_Task2/KNN" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DSML/DecisionTree/DecisionTreeRegressor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DSML_Task2/KNN/KNN_FC.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -360,7 +118,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="RandomForest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="PolynomialRegressionTriennali" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MachineLearning-Local" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -368,11 +126,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DSML/WorkInProgress" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DSML/PolynomialRegression" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DSML/WorkInProgress/RandomForest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DSML/PolynomialRegression/PolynomialRegressionTriennali.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -381,7 +139,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="RegularizingLinearModel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="RegularizingLinearModel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MachineLearning-Local" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -402,7 +160,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="SVMRegressor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="SVMPolynomial Regressor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MachineLearning-Local" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -414,7 +172,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DSML/SVMRegression/SVMRegressor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DSML/SVMRegression/SVMPolynomial Regressor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -423,7 +181,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="SVMRegressorAllAttribute" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="SVMRegressorAllAttribute" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MachineLearning-Local" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -446,13 +204,25 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.RandomForest" />
-        <item itemvalue="Python.DecisionTreeRegressor" />
+        <item itemvalue="Python.PolynomialRegressionTriennali" />
+        <item itemvalue="Python.KNN_FC" />
         <item itemvalue="Python.RegularizingLinearModel" />
-        <item itemvalue="Python.SVMRegressor" />
+        <item itemvalue="Python.SVMPolynomial Regressor" />
         <item itemvalue="Python.SVMRegressorAllAttribute" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -532,7 +302,21 @@
       <option name="project" value="LOCAL" />
       <updated>1567516425156</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="CORREZIONE DI ALCUNI ERRORI">
+      <created>1570598548383</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1570598548383</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;DSML_Task2/K-Means/K-Means_MotivoStatoStudente.py&#10;#&#9;DSML_Task2/K-Means/ListaStudentClusterStatoStudenti.csv&#10;#&#9;DSML_Task2/KNN/WriteListStudent3.py">
+      <created>1587818130650</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1587818130650</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -547,59 +331,6 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="781" height="830" extended-state="0" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4965278" visible="true" weight="0.4368932" />
-      <window_info id="Structure" order="1" sideWeight="0.5021097" side_tool="true" weight="0.16979866" />
-      <window_info id="Favorites" order="2" sideWeight="0.5034722" side_tool="true" weight="0.23058252" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.77056277" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49932885" weight="0.32719547" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.33094555" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067115" side_tool="true" weight="0.39518413" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3286119" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="right" id="R Packages" order="4" weight="0.32996634" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="SciView" order="6" weight="0.32905406" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4965278" visible="true" weight="0.02885906" />
-      <window_info id="Structure" order="1" sideWeight="0.5021097" side_tool="true" weight="0.16979866" />
-      <window_info id="Favorites" order="2" sideWeight="0.5034722" side_tool="true" weight="0.23058252" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39518413" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49932885" weight="0.32719547" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.33094555" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067115" side_tool="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3286119" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="right" id="R Packages" order="4" weight="0.32996634" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="SciView" order="6" weight="0.32905406" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -611,390 +342,46 @@
     <MESSAGE value="1.Implementazione di SVMRegression&#10;2.Implementazione di SVMPolynomialRegression&#10;3.Implementazione di RandomForest (da rivedere)&#10;4.Aggiunta di plot_learning_curves a DecisionTreeRegressor" />
     <MESSAGE value="Modifiche agli attributi predittivi.&#10;Per ogni modello sono stati selezionati come attributi predittivi solamente gli attributi che possono essere in posseso al momento dell'immatricolazione dello studente. &#10;Questa modifica ha abbassato notevolmente il grado di precisione e lo score dei modelli, ma li ha resi più realistici.&#10;&#10;&#10;Devono essere modificati in tal senso ancora DecisionTreeRegressor e RandomForestRegressor" />
     <MESSAGE value="Modifiche agli attributi predittivi.&#10;Per ogni modello sono stati selezionati come attributi predittivi solamente gli attributi che possono essere in posseso al momento dell'immatricolazione dello studente. &#10;Questa modifica ha abbassato notevolmente il grado di precisione e lo score dei modelli, ma li ha resi più realistici.&#10;&#10;&#10;Aggiunta di commenti nei file&#10;LinearRegressionTriennali&#10;PolynomialRegressionTriennalli" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modifiche agli attributi predittivi.&#10;Per ogni modello sono stati selezionati come attributi predittivi solamente gli attributi che possono essere in posseso al momento dell'immatricolazione dello studente. &#10;Questa modifica ha abbassato notevolmente il grado di precisione e lo score dei modelli, ma li ha resi più realistici.&#10;&#10;&#10;Aggiunta di commenti nei file&#10;LinearRegressionTriennali&#10;PolynomialRegressionTriennalli" />
+    <MESSAGE value="CORREZIONE DI ALCUNI ERRORI" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;DSML_Task2/K-Means/K-Means_MotivoStatoStudente.py&#10;#&#9;DSML_Task2/K-Means/ListaStudentClusterStatoStudenti.csv&#10;#&#9;DSML_Task2/KNN/WriteListStudent3.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;DSML_Task2/K-Means/K-Means_MotivoStatoStudente.py&#10;#&#9;DSML_Task2/K-Means/ListaStudentClusterStatoStudenti.csv&#10;#&#9;DSML_Task2/KNN/WriteListStudent3.py" />
   </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/prog2$RandomForest.coverage" NAME="RandomForest Coverage Results" MODIFIED="1566217293881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DSML/WorkInProgress" />
-    <SUITE FILE_PATH="coverage/prog2$K_MeansStudent.coverage" NAME="K-MeansStudent Coverage Results" MODIFIED="1566318814804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DSML_Task2/K-Means" />
-    <SUITE FILE_PATH="coverage/prog2$LinearRegressionTriennali.coverage" NAME="LinearRegressionTriennali Coverage Results" MODIFIED="1566216257024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DSML_Task2/LinearRegression" />
-    <SUITE FILE_PATH="coverage/prog2$LinearRegressionNew.coverage" NAME="LinearRegressionNew Coverage Results" MODIFIED="1566216223146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DSML_Task2/LinearRegression" />
-    <SUITE FILE_PATH="coverage/prog2$PolynomialRegressionTriennali.coverage" NAME="PolynomialRegressionTriennali Coverage Results" MODIFIED="1566217139721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DSML_Task2/PolynomialRegression" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DSML/DecisionTree/CDS.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/DecisionTree/DecisionTree.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="9" column="38" selection-end-line="523" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/WorkInProgress/RandomForestProva.py" />
-    <entry file="file://$PROJECT_DIR$/DSML/WorkInProgress/RandomForest.txt" />
-    <entry file="file://$PROJECT_DIR$/DSML_Task2/LinearRegression/WriteListDataset.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/DecisionTree/predictiveNotDegree.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret column="50" lean-forward="true" selection-start-column="48" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML_Task2/FileGenerated/Tipo_mat.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML_Task2/LinearRegression/Lin_Reg_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2363">
-          <caret line="145" selection-start-line="145" selection-end-line="145" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML_Task2/PolynomialRegression/PolynomialRegressionTriennali.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML_Task2/LinearRegression/ListaStudentiModificata.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML_Task2/FileGenerated/ListStudent.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML_Task2/Utility/WritierList.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="15" selection-end-column="30" />
-          <folding>
-            <element signature="e#197#206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML_Task2/LinearRegression/LinearRegressionTriennali.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="55" column="57" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="79" />
-          <folding>
-            <element signature="e#905#923#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML_Task2/LinearRegression/LinearRegressionNew.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" selection-start-line="22" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/FileGenerated/Tipo_mat.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="148" selection-start-column="148" selection-end-column="148" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML_Task2/K-Means/ListStudent2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML_Task2/K-Means/K-MeansStudent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="90" column="28" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/DecisionTree/sta_stud.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="123" selection-start-column="123" selection-end-column="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/DecisionTree/Mot_sta_stud.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/Utility/AprioriTriennali.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-287">
-          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
-          <folding>
-            <element signature="e#955#974#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/LinearRegression/LinearRegressionAugmented.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="62" column="102" selection-start-line="62" selection-start-column="102" selection-end-line="62" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/Utility/MLProject.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1904">
-          <caret line="175" selection-start-line="175" selection-end-line="175" />
-          <folding>
-            <element signature="e#3817#6269#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/FileGenerated/Mot_sta_stud.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/FileGenerated/sta_stud.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="120" selection-start-column="106" selection-end-column="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/Utility/WritierList.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
-          <folding>
-            <element signature="e#197#206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/FileGenerated/ListDataset.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret column="1975" selection-start-column="1969" selection-end-column="1975" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/FileGenerated/Cod_school.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="606" selection-start-column="596" selection-end-column="606" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/DecisionTree/WriteListDecisionTree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="80" column="38" selection-start-line="80" selection-start-column="38" selection-end-line="80" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/DecisionTree/matr.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/DecisionTree/cf.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1235" selection-start-column="1232" selection-end-column="1235" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/FileGenerated/DictCodSchool.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/DecisionTree/Cod_school.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="957" selection-start-column="947" selection-end-column="957" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML_Task3/K-Means/K-Means_PrimoTask.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/DecisionTree/Tipo_mat.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/ClusteringSchool/ClusterPerSchool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML_Task2/K-Means/K-Means_MotivoStatoStudente.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="125" column="35" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/Plotting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="86" selection-start-line="10" selection-start-column="86" selection-end-line="10" selection-end-column="86" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/LinearRegression/LinRegProva.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-29">
-          <caret line="71" column="23" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/DataBoosting/AdaBoosting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="45" column="68" lean-forward="true" selection-start-line="15" selection-end-line="45" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/DataBoosting/GradientBoosting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="45" column="68" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/SVMRegression/SVMPolynomial Regressor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="30" column="96" selection-start-line="30" selection-start-column="96" selection-end-line="30" selection-end-column="96" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/DecisionTree/predictiveDegree.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13962" selection-start-column="13962" selection-end-column="13962" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/SVMRegression/SVMPolynomialRegressorAllAttribute.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="43" column="98" selection-start-line="43" selection-start-column="98" selection-end-line="43" selection-end-column="98" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/SVMRegression/SVMRegressorAllAttribute">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="56" column="55" lean-forward="true" selection-start-line="56" selection-start-column="55" selection-end-line="56" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/PolynomialRegression/PolynomialRegressionTriennali.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="110" selection-start-line="110" selection-end-line="111" selection-end-column="16" />
-          <folding>
-            <element signature="e#464#516#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/LinearRegression/RegularizingLinearModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="191" lean-forward="true" selection-start-line="191" selection-end-line="191" />
-          <folding>
-            <element signature="e#171#189#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/SVMRegression/SVMRegressor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="42" column="54" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/LinearRegression/LinearRegressionTriennali.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="139" selection-start-line="139" selection-end-line="140" selection-end-column="48" />
-          <folding>
-            <element signature="e#648#666#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/FileGenerated/ListStudent.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="35934" lean-forward="true" selection-start-column="35934" selection-end-column="35934" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/DecisionTree/DecisionTreeRegressor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="120" selection-start-line="120" selection-end-line="124" selection-end-column="78" />
-          <folding>
-            <element signature="e#0#1722#1" />
-            <element signature="e#1724#1743#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSML/WorkInProgress/RandomForest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="104" column="32" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
-          <folding>
-            <element signature="e#188#206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="16" y="0" key="CommitChangelistDialog2" timestamp="1587818129603">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="16" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587818129603" />
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1587818270482">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587818270482" />
+    <state width="1493" height="304" key="GridCell.Tab.0.bottom" timestamp="1587136854301">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="304" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587136854301" />
+    <state width="1493" height="304" key="GridCell.Tab.0.center" timestamp="1587136854301">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="304" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587136854301" />
+    <state width="1493" height="304" key="GridCell.Tab.0.left" timestamp="1587136854301">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="304" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587136854301" />
+    <state width="1493" height="304" key="GridCell.Tab.0.right" timestamp="1587136854301">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="304" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587136854301" />
+    <state x="277" y="56" key="SettingsEditor" timestamp="1587026903036">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1587026903036" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1587818132821">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587818132821" />
+    <state x="420" y="205" key="git4idea.merge.GitPullDialog" timestamp="1587818147427">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="420" y="205" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1587818147427" />
   </component>
 </project>

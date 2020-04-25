@@ -1,0 +1,1 @@
+{"14560295": "'Scientifica'", "10300898": "'Tecnico'", "62636468": "'Liceo-Europeo'", "77914694": "'Classica'", "69017019": "'Socio-Psico-Pedagogico'", "49966967": "'Alberghiere'", "10043435": "'Agrario'", "18527083": "'Geometra'", "97861063": "'Linguistico'", "4452993": "'Artistico'", "54003925": "'Ragioneria'", "41271859": "'Nautico'", "19654372": "'ALTRE'"}
