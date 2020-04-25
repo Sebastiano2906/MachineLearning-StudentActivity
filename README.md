@@ -8,6 +8,7 @@
 
 ##### I risultati sono stati racchiusi in una tesina([a questo link](https://github.com/Sebastiano2906/MachineLearning-StudentActivity/blob/master/Analisi%20delle%20performance%20studentesche.pdf)), in cui spiegheremo qualche piccolissimo richiamo alle tecniche utilizzate, per rendere comprensibile il tutto anche a chi non è pratico del settore.
 
+###### Sentitevi liberi di usare questo lavoro come base per ulteriori sviluppo. Vi preghiamo di contattarci in questi casi, e nel caso in cui avreste bisogno di delucidazioni:
 
 ###### Project Contributors 
 ###### Caruso Sebastiano : sebastiano.caruso95@gmail.com
