@@ -1,1 +1,0 @@
-{"Attivo": 1, "Cessato": 2, "Sospeso": 3}

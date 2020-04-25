@@ -1,1 +1,0 @@
-{"79395398": "'Scientifica'", "26545721": "'Tecnico'", "90870641": "'Liceo-Europeo'", "68555289": "'Classica'", "45059187": "'Socio-Psico-Pedagogico'", "35029301": "'Alberghiere'", "46762837": "'Agrario'", "83268691": "'Geometra'", "35831938": "'Linguistico'", "3955852": "'Artistico'", "44113899": "'Ragioneria'", "59798662": "'Nautico'", "70305661": "'ALTRE'"}

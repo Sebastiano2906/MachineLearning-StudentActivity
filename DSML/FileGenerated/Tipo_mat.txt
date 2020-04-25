@@ -1,1 +1,0 @@
-{"ALTRE": 1, "Agrario": 2, "Alberghiere": 3, "Artistico": 4, "Classica": 5, "Geometra": 6, "Liceo-Europeo": 7, "Linguistico": 8, "Nautico": 9, "Ragioneria": 10, "Scientifica": 11, "Socio-Psico-Pedagogico": 12, "Tecnico": 13}
